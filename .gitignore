@@ -1,0 +1,12 @@
+# IDEs
+.idea/
+
+# Hugo
+/resources/
+public/
+assets/jsconfig.json
+
+# tmp files
+.DS_Store
+.hugo_build.lock
+go.sum
