@@ -13,10 +13,10 @@ main:
   - name: People
     url: people
     weight: 30
-  - name: Projects
-    url: projects
+  - name: Project
+    url: project
     weight: 40
-  - name: Publications
+  - name: Publication
     url: publication
     weight: 50
   - name: Join Us

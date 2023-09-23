@@ -7,11 +7,14 @@ type: landing
 sections:
   - block: hero
     content:
+      # video:
+      #   filename: welcome.mp4
       title: |
-        Cyberbotics Lab
+        Cyberbotics Lab 
       image:
-        filename: welcome.png
-      # text: |
+        filename: animation_llfwgvki_small.gif
+      text: | 
+        under construction
       #   <br>
         
       #   My research interests lie at the intersection of nonlinear control and optimization theory, with a particular focus on developing novel control solutions for complex robotic systems. The central objective of my research is to develop computationally tractable optimization-based control methodologies that unify formal control theory with advanced numerical optimization techniques and, ultimately, to realize versatile and dynamic maneuvers experimentally on a variety of robotic platforms including home assistant robots and robotic exoskeletons. 
@@ -34,26 +37,32 @@ sections:
     design:
       view: card
       columns: '1'
-  
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: coders.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
+
+  # - block: markdown
+  #   content:
+  #     title: 👋 Welcome to Cyberbotics Lab
+  #     subtitle: 'Cdad adlka ladfkadlk '
+  #     text: 
+  #   design:
+  #     columns: '1'
+  #     background:
+  #       video:
+  #         filename: welcome.mp4
+  #         flip: false
+  #         filters:
+  #           brightness: 0.1
+  #         position: center
+  #         color: '#555'
+  #       # image: 
+  #       #   filename: coders.jpg
+  #       #   parallax: false
+  #       #   position: center
+  #       #   size: cover
+  #       #   text_color_light: true
+  #     spacing:
+  #       padding: ['20px', '0', '20px', '0']
+  #     css_class: fullscreen
+     
   
   - block: markdown
     content:

@@ -4,6 +4,7 @@ date: 2022-10-24
 
 type: landing
 
+
 sections:
   - block: contact
     content:
@@ -78,5 +79,5 @@ sections:
           text_color_light: true
       spacing:
         padding: ['400px', '200px', '400px', '0']
-      # css_class: fullscreen
+      css_class: fullscreen
 ---
