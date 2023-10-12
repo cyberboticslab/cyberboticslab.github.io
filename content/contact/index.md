@@ -8,23 +8,27 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Join Us
+      title: Contact
       text: |-
-        ## Prospective Graduate Students
-
-        We are constantly looking for motivated, hard-working, enthusiastic Master and Ph.D. students with research interests that are well aligned with ours. For graduate student positions, you must already be admitted to a graduate program at the Ohio State University to be considered. For additional questions, please email Dr. Hereid with your CV snd a cover letter describing your research background. The potential research topics include but not limited to:
-        - Legged Robotics and Exoskeletons
-        - Dynamics and Kinematics
-        - Nonlinear Optimal Control 
-        - Nonlinear Trajectory Optimization 
-        - Adaptive Robust Control 
-        - Learning-based Feedback Control
-
         
+        ### Prospective Graduate Students
 
-        ## Ohio State Undergraduate Students
+        <p></p>
+        We are continuously seeking highly motivated, dedicated, and enthusiastic Master's and Ph.D. students who share research interests that align closely with ours. To be considered for a graduate student position, you must already be admitted to a graduate program at the Ohio State University. If you have any further inquiries, please feel free to email Dr. Hereid, attaching your CV and a cover letter detailing your research background. Our potential research topics encompass a wide range, including but not limited to:
 
-        We are also welcome to motivated and talented undergraduate students to help us achieve the goals in the Cyberbotics Lab. Ohio State Undergraduate students who are interested in robotics particularly legged locomotion and autonomous control, please contact Dr. Hereid with your CV and a statement of your research interests.
+        - Legged Robotics and Humanoids
+        - Nonlinear Control
+        - Numerical Optimization
+        - Machine Learning
+
+        We eagerly anticipate hearing from exceptional candidates who are eager to contribute to our research endeavors.
+
+        <p></p>
+
+        ### Ohio State Undergraduate Students
+
+        We are actively seeking motivated and talented undergraduate students to join our team in the Cyberbotics Lab and contribute to our goals. If you are an Ohio State undergraduate student with a passion for robotics, specifically legged locomotion and autonomous control, we invite you to reach out to Prof. Hereid. Please provide your CV and a statement outlining your research interests. We look forward to hearing from you and working together towards our objectives.
+
       email: hereid.1@osu.edu
       address:
         street: 201 W. 19th Ave
@@ -36,7 +40,7 @@ sections:
       coordinates:
         latitude: '40.002678438032184'
         longitude: '-83.01453188208187'
-      directions: Scott Lab West Wing Room 198
+      directions: Scott Lab W198
       # office_hours:
       #   - 'Monday 10:00 to 13:00'
       #   - 'Wednesday 09:00 to 10:00'
@@ -61,23 +65,23 @@ sections:
     design:
       columns: '1'
 
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: scottlab.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['400px', '200px', '400px', '0']
-      css_class: fullscreen
+  # - block: markdown
+  #   content:
+  #     title:
+  #     subtitle: ''
+  #     text:
+  #   design:
+  #     columns: '1'
+  #     background:
+  #       image: 
+  #         filename: scottlab.jpg
+  #         filters:
+  #           brightness: 1
+  #         parallax: false
+  #         position: center
+  #         size: cover
+  #         text_color_light: true
+  #     spacing:
+  #       padding: ['400px', '200px', '400px', '0']
+  #     css_class: fullscreen
 ---

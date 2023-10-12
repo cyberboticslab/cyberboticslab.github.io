@@ -5,7 +5,7 @@
 
 main:
   - name: Home
-    url: home
+    url: 
     weight: 10
   - name: News
     url: post
@@ -19,6 +19,6 @@ main:
   - name: Publication
     url: publication
     weight: 50
-  - name: Join Us
+  - name: Contact
     url: contact
     weight: 60
