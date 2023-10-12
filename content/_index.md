@@ -118,30 +118,6 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  # - block: markdown
-  #   content:
-  #     title: 👋 Welcome to Cyberbotics Lab
-  #     subtitle: 'Cdad adlka ladfkadlk '
-  #     text: 
-  #   design:
-  #     columns: '1'
-  #     background:
-  #       video:
-  #         filename: welcome.mp4
-  #         flip: false
-  #         filters:
-  #           brightness: 0.1
-  #         position: center
-  #         color: '#555'
-  #       # image: 
-  #       #   filename: coders.jpg
-  #       #   parallax: false
-  #       #   position: center
-  #       #   size: cover
-  #       #   text_color_light: true
-  #     spacing:
-  #       padding: ['20px', '0', '20px', '0']
-  #     css_class: fullscreen
      
   - block: collection
     id: featured
@@ -153,7 +129,7 @@ sections:
         featured_only: true
     design:
       columns: '2'
-      view: custom
+      view: card
   - block: collection
     content:
       title: Recent Publications
@@ -167,7 +143,7 @@ sections:
         exclude_featured: true
     design:
       columns: '2'
-      view: compact
+      view: list
 
   # - block: logos
   #   content:
@@ -192,14 +168,14 @@ sections:
       font_size_min: 1.0
       font_size_max: 3.0
       columns: 1
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
+  # - block: markdown
+  #   content:
+  #     title: Gallery
+  #     subtitle: ''
+  #     text: |-
+  #       {{< gallery album="demo" >}}
+  #   design:
+  #     columns: '1'
   
   # - block: markdown
   #   content:
