@@ -127,23 +127,14 @@ sections:
         folders:
           - publication
         featured_only: true
-    design:
-      columns: '2'
-      view: card
-  - block: collection
-    content:
-      title: Recent Publications
       text: |-
         {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
+        See all [publications](./publication/).
         {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        exclude_featured: true
     design:
       columns: '2'
-      view: list
+      view: card-custom
+  
 
   # - block: logos
   #   content:
