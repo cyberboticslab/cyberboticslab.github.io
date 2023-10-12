@@ -133,7 +133,7 @@ sections:
         {{% /callout %}}
     design:
       columns: '2'
-      view: card
+      view: card-custom
   
 
   # - block: logos
