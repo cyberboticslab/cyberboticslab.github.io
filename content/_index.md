@@ -31,8 +31,8 @@ sections:
         link:
           icon: robot #graduation-cap
           icon_pack: fas
-          text: Explore Our Research Projects
-          url: ../Project/
+          text: Explore Our Research
+          url: ../project/
       - title: Join Us
         content: 
         align: left
@@ -158,7 +158,7 @@ sections:
       # Minimum and maximum font sizes (1.0 = 100%).
       font_size_min: 1.0
       font_size_max: 3.0
-      columns: 1
+      columns: 2
   # - block: markdown
   #   content:
   #     title: Gallery
