@@ -13,8 +13,13 @@ tags: []
 categories: []
 date: '2018-01-01'
 lastmod: 2023-08-01T13:49:25-04:00
-featured: false
+featured: true
 draft: false
+
+url_video: https://youtu.be/1fC7b2LjVW4?si=scbzz3OeWTMHITUh
+links:
+- name: IEEE
+  url: https://ieeexplore.ieee.org/document/8260563
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -33,6 +38,13 @@ projects: []
 publishDate: '2023-08-01T17:49:25.497743Z'
 publication_types:
 - '2'
-abstract: ''
+abstract: 
+  'Hybrid zero dynamics (HZD) has emerged as a popular framework for dynamic walking but has significant implementation difficulties when applied to the high degrees of freedom humanoids. The primary impediment is the process of gait design-it is difficult for optimizers to converge on a viable set of virtual constraints defining a gait. This paper presents a methodology that allows for fast and reliable generation of dynamic robotic walking gaits through the HZD framework, even in the presence of underactuation. Specifically, we describe an optimization formulation that builds upon the novel combination of HZD and direct collocation methods. Furthermore, achieving a scalable implementation required developing a defect-variable substitution formulation to simplify expressions, which ultimately allows us to generate compact analytic Jacobians of the constraints. We experimentally validate our methodology on an underactuated humanoid, DURUS, a spring-legged machine designed to facilitate energy-economical walking. We show that the optimization approach, in concert with the HZD framework, yields dynamic and stable walking gaits in hardware with a total electrical cost of transport of 1.33.'
 publication: '*IEEE Transactions on Robotics*'
 ---
+
+{{< youtube ipWNSeGRPls >}}
+
+{{< youtube N9Mpq94HKf0  >}}
+
+{{< youtube HHnqatPvU6Q  >}}

@@ -17,6 +17,11 @@ lastmod: 2023-08-01T13:49:24-04:00
 featured: false
 draft: false
 
+links:
+- name: IEEE
+  url: https://ieeexplore.ieee.org/abstract/document/7798370
+
+url_video: https://youtu.be/8jlzwgX9P1E
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
@@ -34,6 +39,9 @@ projects: []
 publishDate: '2023-08-01T17:49:24.659245Z'
 publication_types:
 - '1'
-abstract: ''
+abstract: 
+  '3D dynamical walking subject to precise footstep placements is crucial for navigating real world terrain with discrete footholds. We present a novel methodology that combines control Lyapunov functions-to achieve periodic walking-and control Barrier functions-to enforce strict constraints on step length and step width-unified in a single optimization-based controller. We numerically validate our proposed method by demonstrating dynamic 3D walking at 0.6 m/s on DURUS, a 23 degree-of-freedom underactuated humanoid robot.'
 publication: '*2016 IEEE 55th Conference on Decision and Control (CDC)*'
 ---
+
+{{< youtube 8jlzwgX9P1E>}}

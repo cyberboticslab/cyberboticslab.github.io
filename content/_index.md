@@ -18,9 +18,9 @@ sections:
   - block: slider
     content:
       slides:
-      - title: Welcome to **Cyber** Phycical and Ro**botics** Lab
+      - title: __Cyber__ Phycical and Ro**botics** (Cyberbotics) Lab
         content: 
-        align: center
+        alßign: center
         background:
           image:
             filename: cyberbotics-digit.gif
