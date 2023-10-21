@@ -20,7 +20,7 @@ sections:
       slides:
       - title: __Cyber__ Phycical and Ro**botics** (Cyberbotics) Lab
         content: 
-        alßign: center
+        align: center
         background:
           image:
             filename: cyberbotics-digit.gif
@@ -76,7 +76,10 @@ sections:
   - block: collection
     content:
       title: Recent News
-      subtitle:
+      subtitle: |-
+        {{% callout hint %}}
+        See all [news](./post/).
+        {{% /callout %}}
       text:
       count: 3
       filters:
@@ -89,48 +92,40 @@ sections:
       order: desc
       page_type: post
     design:
-      view: card
-      columns: '1'
-  - block: portfolio
+      view: card-custom
+      columns: '2'
+
+  - block: collection
     id: projects
     content:
-      title: Research
+      title: Research Projects
+      subtitle: |-
+        {{% callout hint %}}
+        See all [projects](./projects/).
+        {{% /callout %}}
       filters:
         folders:
           - project
-      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      default_button_index: 0
-      # Filter toolbar (optional).
-      # Add or remove as many filters (`filter_button` instances) as you like.
-      # To show all items, set `tag` to "*".
-      # To filter by a specific tag, set `tag` to an existing tag name.
-      # To remove the toolbar, delete the entire `filter_button` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Deep Learning
-          tag: Deep Learning
-        - name: Other
-          tag: Demo
+        featured_only: true
+      text: 
     design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
-      view: showcase
-      # For Showcase view, flip alternate rows?
+      columns: '2'
+      view: card-custom
       flip_alt_rows: false
      
   - block: collection
     id: featured
     content:
       title: Featured Publications
+      subtitle: |-
+        {{% callout hint %}}
+        See all [publications](./publication/).
+        {{% /callout %}}
       filters:
         folders:
           - publication
         featured_only: true
-      text: |-
-        {{% callout note %}}
-        See all [publications](./publication/).
-        {{% /callout %}}
+      text: 
     design:
       columns: '2'
       view: card-custom
@@ -153,12 +148,12 @@ sections:
       # Choose a taxonomy from the `taxonomies` list in `config.yaml` to display (e.g. tags, categories, authors)
       taxonomy: tags
       # Choose how many tags you would like to display (0 = all tags)
-      count: 0
+      count: 15
     design:
       # Minimum and maximum font sizes (1.0 = 100%).
       font_size_min: 1.0
-      font_size_max: 3.0
-      columns: 2
+      font_size_max: 2.0
+      columns: '2'
   # - block: markdown
   #   content:
   #     title: Gallery
@@ -166,7 +161,7 @@ sections:
   #     text: |-
   #       {{< gallery album="demo" >}}
   #   design:
-  #     columns: '1'
+  #     columns: 2
   
   # - block: markdown
   #   content:
