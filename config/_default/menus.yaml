@@ -19,6 +19,13 @@ main:
   - name: Publication
     url: publication
     weight: 50
+  - name: Gallery
+    url: gallery
+    weight: 60
+  - name: Video
+    url: videos
+    weight: 70
   - name: Contact
     url: contact
-    weight: 60
+    weight: 78
+

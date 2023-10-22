@@ -1,8 +1,8 @@
 ---
 # Leave the homepage title empty to use the site title
-title: 
+title: Gallery
 date: 2022-10-24
-type: 
+type: landing
 
 sections:
   - block: markdown
@@ -10,16 +10,10 @@ sections:
       title: Gallery
       subtitle: ''
       text: |-
-        {{< gallery album="demo" >}}
+        {{< gallery album="test">}}
     design:
-      columns: 2
-# sections:
-#     - gallery_item:
-#       - album: demo
-#         image: cover-page.png
-#         caption: Write your image 1 caption here
-#       - album: demo
-#         image: story-page.png
-#         caption: Write your image 2 caption here
+      columns: '1'
+
+
 ---
 

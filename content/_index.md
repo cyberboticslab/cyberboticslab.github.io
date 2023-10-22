@@ -32,13 +32,13 @@ sections:
           icon: robot #graduation-cap
           icon_pack: fas
           text: Explore Our Research
-          url: ../project/
-      - title: Join Us
+          url: ../projects/
+      - title: __Join Us__
         content: 
         align: left
         background:
           image:
-            filename: contact.jpg
+            filename: joinus.jpg
             filters:
               brightness: 0.4
           position: center
@@ -71,7 +71,7 @@ sections:
       # Automatically transition through slides?
       loop: true
       # Duration of transition between slides (in ms)
-      interval: 5000      
+      interval: 2000      
 
   - block: collection
     content:
