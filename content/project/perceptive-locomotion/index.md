@@ -1,9 +1,9 @@
 ---
-title: Perceptive Humanoid Locomotion
+title: Perceptive Humanoid Locomotion and Autonomous Navigation
 summary: Our research focuses on developing advanced algorithms and technologies to enable humanoid robots to perceive their environment, navigate autonomously, and achieve human-like locomotion.
 tags:
   - perception
-  - navigation
+  - planning
   - learning
   - humanoid
 date: "2023-04-27T00:00:00Z"

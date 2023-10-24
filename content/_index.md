@@ -76,10 +76,10 @@ sections:
   - block: collection
     content:
       title: Recent News
-      subtitle: |-
-        {{% callout hint %}}
-        See all [news](./post/).
-        {{% /callout %}}
+      # subtitle: |-
+      #   {{% callout hint %}}
+      #   See all [news](./post/).
+      #   {{% /callout %}}
       text:
       count: 3
       filters:
@@ -99,15 +99,16 @@ sections:
     id: projects
     content:
       title: Research Projects
-      subtitle: |-
-        {{% callout hint %}}
-        See all [projects](./projects/).
-        {{% /callout %}}
+      # subtitle: |-
+      #   {{% callout hint %}}
+      #   See all [projects](./projects/).
+      #   {{% /callout %}}
       filters:
         folders:
           - project
-        featured_only: true
+        featured_only: false
       text: 
+      count: 3
     design:
       columns: '2'
       view: card-custom
@@ -117,15 +118,16 @@ sections:
     id: featured
     content:
       title: Featured Publications
-      subtitle: |-
-        {{% callout hint %}}
-        See all [publications](./publication/).
-        {{% /callout %}}
+      # subtitle: |-
+      #   {{% callout hint %}}
+      #   See all [publications](./publication/).
+      #   {{% /callout %}}
       filters:
         folders:
           - publication
         featured_only: true
       text: 
+      count: 3
     design:
       columns: '2'
       view: card-custom
