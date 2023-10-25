@@ -3,9 +3,8 @@ title: Fast Robot Optimization and Simulation Toolkit (FROST)
 summary: In this project, we introduce FROST (Fast Robot Optimization and Simulation Toolkit), a powerful tool that enables fast trajectory optimization for high-dimensional robotic systems, such as humanoid robots. 
 tags:
   - planning
-  - control
   - optimization
-date: '2017-04-27T00:00:00Z'
+date: '2018-02-27T00:00:00Z'
 featured: true
 
 image:

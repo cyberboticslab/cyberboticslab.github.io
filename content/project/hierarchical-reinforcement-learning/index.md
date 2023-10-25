@@ -5,7 +5,7 @@ tags:
   - learning
   - humanoid
   - exoskeleton
-date: '2023-04-27T00:00:00Z'
+date: '2022-04-15T00:00:00Z'
 featured: true
 
 image:
