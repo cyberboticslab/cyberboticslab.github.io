@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: Contact Us
 date: 2022-10-24
 
 type: landing
@@ -8,7 +8,7 @@ type: landing
 sections:
   - block: contact
     content:
-      title: Contact
+      title: Contact Us
       text: |-
         
         ### Prospective Graduate Students
@@ -52,7 +52,7 @@ sections:
       #    link: 'https://discourse.gohugo.io'
     
       # Automatically link email and phone or display as text?
-      autolink: true
+      autolink: false
     
       # Email form provider
       # form:
@@ -63,27 +63,42 @@ sections:
       #     # Enable CAPTCHA challenge to reduce spam?
       #     captcha: false
     design:
-      columns: '1'
+      columns: '2'
 
-  # - block: markdown
-  #   content:
-  #     title:
-  #     subtitle: ''
-  #     text:
-  #   design:
-  #     columns: '1'
-  #     background:
-  #       image: 
-  #         filename: scottlab.jpg
-  #         filters:
-  #           brightness: 1
-  #         parallax: false
-  #         position: center
-  #         size: cover
-  #         text_color_light: true
-  #     spacing:
-  #       padding: ['400px', '200px', '400px', '0']
-  #     css_class: fullscreen
+  - block: markdown
+    content:
+      title:
+      subtitle: ''
+      text:
+    design:
+      columns: '2'
+      background:
+        image: 
+          filename: osu_lab.png
+          filters:
+            brightness: 1
+          parallax: false
+          position: center
+          size: cover
+          text_color_light: true
+      spacing:
+        padding: ['600px', '200px', '400px', '0']
+      css_class: fullscreen
 ---
 
-adfadfa 
+<!-- ### Prospective Graduate Students
+
+
+We are continuously seeking highly motivated, dedicated, and enthusiastic Master's and Ph.D. students who share research interests that align closely with ours. To be considered for a graduate student position, you must already be admitted to a graduate program at the Ohio State University. If you have any further inquiries, please feel free to email Dr. Hereid, attaching your CV and a cover letter detailing your research background. Our potential research topics encompass a wide range, including but not limited to:
+
+- Legged Robotics and Humanoids
+- Nonlinear Control
+- Numerical Optimization
+- Machine Learning
+
+We eagerly anticipate hearing from exceptional candidates who are eager to contribute to our research endeavors.
+
+
+### Ohio State Undergraduate Students
+
+We are actively seeking motivated and talented undergraduate students to join our team in the Cyberbotics Lab and contribute to our goals. If you are an Ohio State undergraduate student with a passion for robotics, specifically legged locomotion and autonomous control, we invite you to reach out to Prof. Hereid. Please provide your CV and a statement outlining your research interests. We look forward to hearing from you and working together towards our objectives.  -->

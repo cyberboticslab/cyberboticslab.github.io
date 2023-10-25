@@ -1,5 +1,5 @@
 ---
-title: Video Gallery
+title: Video Gallery (selected)
 
 # Listing view
 view: card
