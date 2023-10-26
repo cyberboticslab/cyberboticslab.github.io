@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: Photo Gallery
-date: 2022-10-24
+date: 2023-10-24
 type: landing
 
 sections:
@@ -16,4 +16,3 @@ sections:
 
 
 ---
-
