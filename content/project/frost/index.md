@@ -5,7 +5,7 @@ tags:
   - planning
   - optimization
 date: '2018-02-27T00:00:00Z'
-featured: true
+featured: false
 
 image:
   caption: Robot platforms that use FROST.

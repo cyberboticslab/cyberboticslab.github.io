@@ -5,7 +5,7 @@ tags:
   - learning
   - control
 date: '2023-02-01T00:00:00Z'
-featured: true
+featured: false
 
 image:
   caption: 

@@ -4,7 +4,7 @@ summary: As legged robots become increasingly prevalent in various applications,
 tags:
   - humanoid
 date: '2022-08-27T00:00:00Z'
-featured: true
+featured: false
 
 image:
   caption: A potential testing configuration of legged robots safety.

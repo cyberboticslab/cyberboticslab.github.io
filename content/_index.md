@@ -18,8 +18,8 @@ sections:
   - block: slider
     content:
       slides:
-      - title: __Cyber__ Phycical and Ro**botics** (Cyberbotics) Lab
-        content: 
+      - title: Welcome to Cyberbotics Lab
+        content: Our research focuses on __Cyber__-Physical and Ro**botics** (Cyberbotics) systems, with a primary emphasis on bipedal walking robots.
         align: center
         background:
           image:
@@ -29,12 +29,12 @@ sections:
           position: center 
           color: '#333'
         link:
-          icon: robot #graduation-cap
+          icon: book-open-reader #graduation-cap
           icon_pack: fas
           text: Explore Our Research
           url: ../projects/
-      - title: __Join Us__
-        content: 
+      - title: __Meet Our Team__
+        content: A diverse and talented group of researchers dedicated to scientific excellence.
         align: left
         background:
           image:
@@ -53,16 +53,22 @@ sections:
         #   icon_pack: fas
         #   text: Join Us
         #   url: ../contact/
-      # - title: World-Class Semiconductor Lab
-      #   content: 'Just opened last month!'
-      #   align: right
-      #   background:
-      #     image:
-      #       filename: welcome.png
-      #       filters:
-      #         brightness: 0.5
-      #     position: center
-      #     color: '#333'
+      - title: Meet Our Robots
+        content: 'Uniquely equipped to support groundbreaking discoveries.'
+        align: right
+        background:
+          image:
+            filename: osu-robots.png
+            filters:
+              brightness: 0.4
+          position: center
+          color: '#555'
+        link:
+          icon: robot
+          icon_pack: fas
+          text: Robot Videos
+          url: ../videos/
+        
         
     design:
       # Slide height is automatic unless you force a specific height (e.g. '400px')
@@ -71,15 +77,15 @@ sections:
       # Automatically transition through slides?
       loop: true
       # Duration of transition between slides (in ms)
-      interval: 2500      
+      interval: 5000      
 
   - block: collection
     content:
       title: Recent News
-      subtitle: |-
-        {{% callout hint %}}
-        See all [news](./post/).
-        {{% /callout %}}
+      # subtitle: |-
+        # {{% callout hint %}}
+        # See all [news](./post/).
+        # {{% /callout %}}
       text:
       count: 3
       filters:
@@ -92,8 +98,8 @@ sections:
       order: desc
       page_type: post
     design:
-      view: card-custom
-      columns: '2'
+      view: compact
+      columns: 1'
 
   - block: collection
     id: projects
@@ -106,31 +112,31 @@ sections:
       filters:
         folders:
           - project
-        featured_only: false
+        featured_only: true
       text: 
       count: 3
     design:
-      columns: '2'
-      view: card-custom
+      columns: '1'
+      view: showcase
       flip_alt_rows: false
      
   - block: collection
     id: featured
     content:
       title: Featured Publications
-      subtitle: |-
-        {{% callout hint %}}
-        See all [publications](./publication/).
-        {{% /callout %}}
+      # subtitle: |-
+      #   {{% callout hint %}}
+      #   See all [publications](./publication/).
+      #   {{% /callout %}}
       filters:
         folders:
           - publication
         featured_only: true
       text: 
-      count: 3
+      count: 5
     design:
-      columns: '2'
-      view: card-custom
+      columns: '1'
+      view: custom
   
 
   # - block: logos
@@ -150,12 +156,12 @@ sections:
       # Choose a taxonomy from the `taxonomies` list in `config.yaml` to display (e.g. tags, categories, authors)
       taxonomy: tags
       # Choose how many tags you would like to display (0 = all tags)
-      count: 15
+      count: 20
     design:
       # Minimum and maximum font sizes (1.0 = 100%).
-      font_size_min: 1.0
-      font_size_max: 2.0
-      columns: '2'
+      font_size_min: 0.8
+      font_size_max: 2.5
+      columns: '1'
   # - block: markdown
   #   content:
   #     title: Gallery
