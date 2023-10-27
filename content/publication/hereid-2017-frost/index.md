@@ -7,7 +7,10 @@ summary: ''
 authors:
 - Ayonga Hereid
 - Aaron D Ames
-tags: []
+tags: 
+- frost
+- trajectory optimization
+- simulation
 categories: []
 date: '2017-01-01'
 lastmod: 2023-08-01T13:49:25-04:00

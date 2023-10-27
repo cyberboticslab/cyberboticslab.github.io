@@ -11,7 +11,10 @@ authors:
 - Utkarsh A Mishra
 - Ayonga Hereid
 - Shishir Kolathaya
-tags: []
+tags: 
+- linear policy
+- robust locomotion
+- rough terrain
 categories: []
 date: '2022-01-01'
 lastmod: 2023-08-01T13:49:27-04:00

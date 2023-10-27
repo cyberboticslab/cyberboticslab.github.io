@@ -8,7 +8,11 @@ authors:
 - Octavian Donca
 - Chayapol Beokhaimook
 - Ayonga Hereid
-tags: []
+tags: 
+- path planning
+- online planning
+- real-time navigation
+- dynamic environments
 categories: []
 date: '2022-01-01'
 lastmod: 2023-08-01T13:49:28-04:00

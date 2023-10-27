@@ -15,7 +15,11 @@ authors:
 - Aaron D Ames
 - Koushil Sreenath
 - Jessy W Grizzle
-tags: []
+tags: 
+- atalante
+- exoskeleton
+- cecentralized control
+- hybrid zero dynamics
 categories: []
 date: '2017-01-01'
 lastmod: 2023-08-01T13:49:25-04:00

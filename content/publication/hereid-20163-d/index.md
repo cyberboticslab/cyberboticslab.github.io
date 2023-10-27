@@ -10,7 +10,10 @@ authors:
 - Eric A Cousineau
 - Christian M Hubicki
 - Aaron D Ames
-tags: []
+tags: 
+- direct collocation
+- virtual constraints
+- hybrid zero dynamics
 categories: []
 date: '2016-01-01'
 lastmod: 2023-08-01T13:49:24-04:00

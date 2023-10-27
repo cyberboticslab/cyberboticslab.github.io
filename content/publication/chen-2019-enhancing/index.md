@@ -10,7 +10,10 @@ authors:
 - Ayonga Hereid
 - Huei Peng
 - Jessy Grizzle
-tags: []
+tags: 
+- frost
+- control barrier function
+- supervised learning
 categories: []
 date: '2019-01-01'
 lastmod: 2023-08-01T13:49:26-04:00

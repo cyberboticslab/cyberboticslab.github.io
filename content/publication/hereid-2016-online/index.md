@@ -9,7 +9,10 @@ authors:
 - Ayonga Hereid
 - Shishir Kolathaya
 - Aaron D Ames
-tags: []
+tags: 
+- pseudospectral collocation
+- trajectory optimization
+- online planning
 categories: []
 date: '2016-01-01'
 lastmod: 2023-08-01T13:49:25-04:00

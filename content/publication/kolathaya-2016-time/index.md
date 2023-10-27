@@ -9,7 +9,10 @@ authors:
 - Shishir Kolathaya
 - Ayonga Hereid
 - Aaron D Ames
-tags: []
+tags: 
+- control Lyapunov function
+- hybrid zero dynamics
+- time-based phase variable
 categories: []
 date: '2016-01-01'
 lastmod: 2023-08-01T13:49:24-04:00

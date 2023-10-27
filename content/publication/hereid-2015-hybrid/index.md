@@ -11,7 +11,10 @@ authors:
 - Eric A Cousineau
 - Jonathan W Hurst
 - Aaron D Ames
-tags: []
+tags: 
+- multiple shooting
+- trajectory optimization
+- hybrid zero dynamics
 categories: []
 date: '2015-01-01'
 lastmod: 2023-08-01T13:49:23-04:00

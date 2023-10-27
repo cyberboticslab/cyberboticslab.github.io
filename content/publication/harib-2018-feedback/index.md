@@ -21,10 +21,11 @@ tags:
 - supervised learning
 - exoskeleton
 - trajectory optimization
+- atalante
 categories: []
 date: '2018-01-01'
 lastmod: 2023-08-01T13:49:26-04:00
-featured: false
+featured: true
 draft: false
 
 links:

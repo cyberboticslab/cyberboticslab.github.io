@@ -15,11 +15,14 @@ authors:
 - Matthieu Masselin
 - Jessy Grizzle
 - Aaron D Ames
-tags: []
+tags: 
+- exoskeleton
+- partial hybrid zero dynamics
+- atalante
 categories: []
 date: '2018-01-01'
 lastmod: 2023-08-01T13:49:26-04:00
-featured: true
+featured: false
 draft: false
 
 links:

@@ -10,11 +10,14 @@ authors:
 - Bowen Weng
 - Wei Zhang
 - Ayonga Hereid
-tags: []
+tags: 
+- reinforcement learning
+- motion planning
+- robust locomotion
 categories: []
 date: '2022-01-01'
 lastmod: 2023-08-01T13:49:28-04:00
-featured: false
+featured: true
 draft: false
 
 links:

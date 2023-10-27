@@ -9,7 +9,10 @@ authors:
 - Guillermo A Castillo
 - Wei Zhang
 - Ayonga Hereid
-tags: []
+tags: 
+- safety testing
+- adversarial learning
+- scenario-based sampling
 categories: []
 date: '2023-08-01'
 lastmod: 2023-08-01T13:49:29-04:00

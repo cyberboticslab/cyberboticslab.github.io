@@ -1,15 +1,17 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Speed regulation in 3D robotic walking through motion transitions between human-inspired
-  partial hybrid zero dynamics
+title: Speed regulation in 3D robotic walking through motion transitions between human-inspired partial hybrid zero dynamics
 subtitle: ''
 summary: ''
 authors:
 - Matthew J Powell
 - Ayonga Hereid
 - Aaron D Ames
-tags: []
+tags: 
+- speed regulation
+- motion primitives
+- partial hybrid zero dynamics
 categories: []
 date: '2013-01-01'
 lastmod: 2023-08-01T13:49:23-04:00

@@ -11,7 +11,10 @@ authors:
 - Victor Paredes
 - Ayonga Hereid
 - Yan Gu
-tags: []
+tags: 
+- dynamic rigid surface
+- template model
+- foot placement
 categories: []
 date: '2023-05-31'
 lastmod: 2023-08-01T13:49:29-04:00

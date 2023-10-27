@@ -8,11 +8,14 @@ summary: ''
 authors:
 - Victor Paredes
 - Ayonga Hereid
-tags: []
+tags: 
+- exoskeleton
+- virtual constraints
+- zero moment point
 categories: []
 date: '2020-10-01'
 lastmod: 2023-08-01T13:49:27-04:00
-featured: false
+featured: true
 draft: false
 
 url_video: https://youtu.be/WsZWf8C3ZgY

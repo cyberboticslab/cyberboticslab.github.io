@@ -9,11 +9,13 @@ authors:
 - Guillermo A Castillo
 - Yun-Seok Kang
 - Ayonga Hereid
-tags: []
+tags: 
+- safety testing
+- robust locomotion
 categories: []
 date: '2023-09-15'
 lastmod: 2023-10-01T13:49:28-04:00
-featured: false
+featured: true
 draft: false
 
 url_video: 'https://youtu.be/bUWnnTYNL3A?si=X4LFq_Q3bUXql3tm'

@@ -9,7 +9,10 @@ authors:
 - Kirtankumar Thakkar
 - Victor Paredes
 - Ayonga Hereid
-tags: []
+tags: 
+- adaptive learning
+- exoskeleton
+- motion planning
 categories: []
 date: '2021-01-01'
 lastmod: 2023-08-01T13:49:27-04:00

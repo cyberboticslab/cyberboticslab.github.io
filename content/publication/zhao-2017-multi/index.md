@@ -9,7 +9,10 @@ authors:
 - Ayonga Hereid
 - Wen-loong Ma
 - Aaron D Ames
-tags: []
+tags: 
+- multi-contact locomotion
+- hybrid zero dynamics
+- virtual constraints
 categories: []
 date: '2017-01-01'
 lastmod: 2023-08-01T13:49:23-04:00

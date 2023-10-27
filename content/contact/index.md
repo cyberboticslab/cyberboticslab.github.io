@@ -65,25 +65,25 @@ sections:
     design:
       columns: '2'
 
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '2'
-      background:
-        image: 
-          filename: osu_lab.png
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: cover
-          text_color_light: true
-      spacing:
-        padding: ['600px', '200px', '400px', '0']
-      css_class: fullscreen
+  # - block: markdown
+  #   content:
+  #     title:
+  #     subtitle: ''
+  #     text:
+  #   design:
+  #     columns: '2'
+  #     background:
+  #       image: 
+  #         filename: osu_lab.png
+  #         filters:
+  #           brightness: 1
+  #         parallax: false
+  #         position: center
+  #         size: cover
+  #         text_color_light: true
+  #     spacing:
+  #       padding: ['600px', '200px', '400px', '0']
+  #     css_class: fullscreen
 ---
 
 <!-- ### Prospective Graduate Students

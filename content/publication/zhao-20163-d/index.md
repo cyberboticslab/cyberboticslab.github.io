@@ -10,7 +10,10 @@ authors:
 - Ayonga Hereid
 - Eric Ambrose
 - Aaron D Ames
-tags: []
+tags: 
+- multi-contact locomotion
+- prostheses
+- direct collocation
 categories: []
 date: '2016-01-01'
 lastmod: 2023-08-01T13:49:24-04:00

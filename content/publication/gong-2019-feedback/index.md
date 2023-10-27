@@ -13,7 +13,10 @@ authors:
 - Omar Harib
 - Jiunn-Kai Huang
 - Jessy Grizzle
-tags: []
+tags: 
+- cassie
+- template model
+- virtual constraints
 categories: []
 date: '2019-01-01'
 lastmod: 2023-08-01T13:49:26-04:00

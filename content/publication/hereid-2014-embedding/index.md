@@ -9,7 +9,11 @@ authors:
 - Ayonga Hereid
 - Matthew J Powell
 - Aaron D Ames
-tags: []
+tags: 
+- dynamic embedding
+- spring loaded inverted pendulum
+- template model
+- control Lyapunov function
 categories: []
 date: '2014-01-01'
 lastmod: 2023-08-01T13:49:23-04:00

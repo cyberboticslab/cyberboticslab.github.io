@@ -11,7 +11,8 @@ authors:
 - Paul Y Oh
 - Aaron D Ames
 - Mike Stilman
-tags: []
+tags: 
+- motion primitives
 categories: []
 date: '2015-01-01'
 lastmod: 2023-08-01T13:49:25-04:00

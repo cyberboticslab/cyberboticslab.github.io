@@ -10,7 +10,10 @@ authors:
 - Jacob Reher
 - Ayonga Hereid
 - Aaron D Ames
-tags: []
+tags: 
+- control Lyapunov function
+- input to state stability
+- robust control
 categories: []
 date: '2018-01-01'
 lastmod: 2023-08-01T13:49:26-04:00

@@ -9,7 +9,9 @@ authors:
 - Ayonga Hereid
 - Aaron Ames
 - Mike Stilman
-tags: []
+tags: 
+- speed regulation
+- motion primitives
 categories: []
 date: '2013-01-01'
 lastmod: 2023-08-01T13:49:23-04:00

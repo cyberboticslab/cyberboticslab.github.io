@@ -11,7 +11,10 @@ authors:
 - Guillermo A Castillo
 - Ayonga Hereid
 - Shishir Kolathaya
-tags: []
+tags: 
+- linear policy
+- robust locomotion
+- slope walking
 categories: []
 date: '2021-10-01'
 lastmod: 2023-08-01T13:49:27-04:00

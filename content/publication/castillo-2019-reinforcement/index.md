@@ -16,10 +16,11 @@ tags:
 - reinforcement learning
 - hybrid zero dynamics
 - underactuated robots
+- motion planning
 categories: []
 date: '2019-05-31'
 lastmod: 2023-08-01T13:49:26-04:00
-featured: true
+featured: false
 draft: false
 
 # url_pdf: https://arxiv.org/pdf/1810.01977.pdf

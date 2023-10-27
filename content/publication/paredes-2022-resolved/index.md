@@ -8,7 +8,10 @@ summary: ''
 authors:
 - Victor C Paredes
 - Ayonga Hereid
-tags: []
+tags: 
+- adaptive learning
+- linear inverted pendulum
+- inverse kinematics
 categories: []
 date: '2022-01-01'
 lastmod: 2023-08-01T13:49:28-04:00

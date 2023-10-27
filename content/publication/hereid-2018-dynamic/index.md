@@ -9,11 +9,14 @@ authors:
 - Christian M Hubicki
 - Eric A Cousineau
 - Aaron D Ames
-tags: []
+tags: 
+- direct collocation
+- virtual constraints
+- durus
 categories: []
 date: '2018-01-01'
 lastmod: 2023-08-01T13:49:25-04:00
-featured: true
+featured: false
 draft: false
 
 url_video: https://youtu.be/1fC7b2LjVW4?si=scbzz3OeWTMHITUh

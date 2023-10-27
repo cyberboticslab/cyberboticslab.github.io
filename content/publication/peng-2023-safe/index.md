@@ -10,11 +10,13 @@ authors:
 - Octavian Donca
 - Guillermo Castillo
 - Ayonga Hereid
-tags: []
+tags: 
+- control barrier function
+- path planning
 categories: []
 date: '2023-01-01'
 lastmod: 2023-08-01T13:49:29-04:00
-featured: false
+featured: true
 draft: false
 
 links:

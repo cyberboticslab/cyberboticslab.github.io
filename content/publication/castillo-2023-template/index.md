@@ -17,7 +17,7 @@ tags:
 categories: []
 date: '2023-10-01'
 lastmod: 2023-09-15T13:49:28-04:00
-featured: true
+featured: false
 draft: false
 
 url_video: https://youtu.be/YTjMgGka4Ig?si=ryb5Cb7ePW4Xy3fZ

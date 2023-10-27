@@ -10,7 +10,10 @@ authors:
 - Bowen Weng
 - Wei Zhang
 - Ayonga Hereid
-tags: []
+tags: 
+- hybrid zero dynamics
+- reinforcement learning
+- motion planning
 categories: []
 date: '2020-05-01'
 lastmod: 2023-08-01T13:49:27-04:00

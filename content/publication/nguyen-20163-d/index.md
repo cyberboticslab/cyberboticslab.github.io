@@ -10,7 +10,9 @@ authors:
 - Jessy W Grizzle
 - Aaron D Ames
 - Koushil Sreenath
-tags: []
+tags: 
+- stepping stone
+- control barrier function
 categories: []
 date: '2016-01-01'
 lastmod: 2023-08-01T13:49:24-04:00

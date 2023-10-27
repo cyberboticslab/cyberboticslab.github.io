@@ -11,7 +11,10 @@ authors:
 - Michael X Grey
 - Andrea L Thomaz
 - Aaron D Ames
-tags: []
+tags: 
+- trajectory optimization
+- direct collocation
+- whole body coordination
 categories: []
 date: '2016-01-01'
 lastmod: 2023-08-01T13:49:24-04:00

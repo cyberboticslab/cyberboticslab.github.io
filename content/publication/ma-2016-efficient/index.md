@@ -10,7 +10,10 @@ authors:
 - Ayonga Hereid
 - Christian M Hubicki
 - Aaron D Ames
-tags: []
+tags: 
+- humanoid running
+- hybrid zero dynamics
+- direct collocation
 categories: []
 date: '2016-01-01'
 lastmod: 2023-08-01T13:49:24-04:00

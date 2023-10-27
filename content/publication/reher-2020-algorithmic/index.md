@@ -11,7 +11,10 @@ authors:
 - Shishir Kolathaya
 - Christian M Hubicki
 - Aaron D Ames
-tags: []
+tags: 
+- multi-contact locomotion
+- human-like locomtion
+- direct collocation
 categories: []
 date: '2020-01-01'
 lastmod: 2023-08-01T13:49:25-04:00
