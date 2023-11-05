@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Tom Ballas
+title: Xuanning Liu
 
 # Full Name (for SEO)
-first_name: Tom
-last_name: Ballas
+first_name: Xuanning
+last_name: Liu
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: B.S. in Computer Science and Engineering
+role: B.S. in Mechanical and Aerospace Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -25,9 +25,12 @@ organizations:
   
 education:
   courses:
-    - course: BSc in Computer Science and Engineering
+    - course: MSc in Robotics 
+      institution: Johns Hopkins University
+      year: 
+    - course: BSc in Mechanical and Aerospace Engineering 
       institution: The Ohio State University
-      year: 2021
+      year: 2022
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -36,10 +39,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:ballas.13@osu.edu'
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/in/tom-ballas-439052142/
+    link: 'mailto:liu.8573@osu.edu'
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -47,7 +47,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'ballas.13@osu.edu'
+email: 'liu.8573@osu.edu'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -58,4 +58,4 @@ user_groups:
   - Alumni
 ---
 
-Tom Ballas received his BSc in Computer Science and Engineering with Minor in Data Analytics from The Ohio State University in 2021. He completed his undergraduate honor thesis, titled as **''Off‐Policy Reinforcement Learning for Bipedal Robot Locomotion''**, under the supervision of Prof. Ayonga Hereid.
+Xuaning Liu received her BSc in Mechanical and Aerospace Engineering from The Ohio State University in 2022. She is pursuing her MS degree in Robotics at Johns Hopkins University.

@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Tom Ballas
+title: Emmanuel Gyasi Baaye
 
 # Full Name (for SEO)
-first_name: Tom
-last_name: Ballas
+first_name: Emmanuel
+last_name: Gyasi Baaye
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: B.S. in Computer Science and Engineering
+role: B.S. in Mechanical and Aerospace Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -25,7 +25,7 @@ organizations:
   
 education:
   courses:
-    - course: BSc in Computer Science and Engineering
+    - course: BSc in Mechanical and Aerospace Engineering
       institution: The Ohio State University
       year: 2021
 
@@ -36,10 +36,10 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:ballas.13@osu.edu'
+    link: 'mailto:gyasibaaye.1@osu.edu'
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/in/tom-ballas-439052142/
+    link: https://www.linkedin.com/in/auelgb/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -47,7 +47,7 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: 'ballas.13@osu.edu'
+email: 'gyasibaaye.1@osu.edu'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -58,4 +58,4 @@ user_groups:
   - Alumni
 ---
 
-Tom Ballas received his BSc in Computer Science and Engineering with Minor in Data Analytics from The Ohio State University in 2021. He completed his undergraduate honor thesis, titled as **''Off‐Policy Reinforcement Learning for Bipedal Robot Locomotion''**, under the supervision of Prof. Ayonga Hereid.
+Emmanuel Gyasi Baaye received his BSc in Mechanical and Aerospace Engineering from The Ohio State University in 2021. 
