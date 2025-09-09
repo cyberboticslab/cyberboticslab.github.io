@@ -65,7 +65,6 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Graduate Students
+  - Alumni
 ---
-
-Himanshu Lodha is a master's student in the Electrical and Computer Engineering Department at the Ohio State University. His research interests lie at the intersection of controls, perception, and learning for legged systems, thereby developing more agile and athletic robot behaviours. Before joining OSU, he worked as a Research Engineer at the Stochastic Robotics Lab (Stoch Lab) at the Indian Institute of Science (IISc), Bengaluru, with Dr. Shishir NY Kolathaya, on the development of indigenous quadrupedal robots for over two and a half years.
+Himanshu Lodha received his M.S. degree in the Electrical and Computer Engineering at the Ohio State University in 2025. His research interests lie at the intersection of controls, perception, and learning for legged systems, thereby developing more agile and athletic robot behaviours. Before joining OSU, he worked as a Research Engineer at the Stochastic Robotics Lab (Stoch Lab) at the Indian Institute of Science (IISc), Bengaluru, with Dr. Shishir NY Kolathaya, on the development of indigenous quadrupedal robots for over two and a half years.

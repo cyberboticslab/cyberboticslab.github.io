@@ -57,7 +57,5 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
 ---
-
-Aditya Rampal is a 4th year Mechanical Engineering undergraduate student at The Ohio State University. He is an international transfer student from Malaysia enrolled through American Degree Transfer Program. His research interests include human-robot interactions, artificial intelligence and motion planning. His area of research focuses on Advanced Legged Robotics, which exhibits unstable nonlinear dynamics coupled with discrete switching behavior, and provides a quintessential example of such complex dynamical systems. The central objective of his research is to study the template models for locomotion such as the Angular Linear Inverted Pendulum (ALIP) to realize the navigation of legged robots in the complex real-world environment. He plans to pursue a masters degree in Robotics Engineering after graduating from The Ohio State University. 

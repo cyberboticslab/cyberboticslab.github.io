@@ -63,7 +63,6 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Graduate Students
+  - Alumni
 ---
-
-Guillermo  Castillo is a  Ph.D. candidate in  Electrical and  Computer  Engineering at The Ohio State University. From  2014  to  2017,  he was with the  Department of  Automation and  Control at the Escuela Politecnica Nacional. His research interests include control systems, motion planning, and safety testing for legged robots. In particular, he works on the integration of learning-based techniques with control systems to develop robust feedback controllers that realize dynamic locomotion. He received the Fulbright Scholarship in 2017 and the Presidential Fellowship at The Ohio State University in 2023.
+Guillermo  Castillo received his Ph.D in  Electrical and  Computer  Engineering at The Ohio State University in 2024. From  2014  to  2017,  he was with the  Department of  Automation and  Control at the Escuela Politecnica Nacional. His research interests include control systems, motion planning, and safety testing for legged robots. In particular, he works on the integration of learning-based techniques with control systems to develop robust feedback controllers that realize dynamic locomotion. He received the Fulbright Scholarship in 2017 and the Presidential Fellowship at The Ohio State University in 2023.

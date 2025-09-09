@@ -52,9 +52,5 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
 ---
-
-Boyuan "Ben" Wang is an undergraduate student in Mechanical Engineering at The Ohio State University. He is working with the lab to accomplish his undergraduate research distinction program on continuous stairs climbing control design for bipedal robots. The project will be completed using both model-based and learning-based approaches.
-
-
