@@ -10,7 +10,7 @@ last_name: Lodha
 superuser: true
 
 # Role/position
-role: Graduate Student
+role: M.S. in Electrical and Computer Engineering
 
 # Organizations/Affiliations
 organizations:

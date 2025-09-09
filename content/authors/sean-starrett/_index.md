@@ -10,7 +10,7 @@ last_name: Starrett
 superuser: true
 
 # Role/position
-role: Graduate Student
+role: M.S. in Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:

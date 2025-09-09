@@ -10,7 +10,7 @@ last_name: Castillo
 superuser: true
 
 # Role/position
-role: Ph.D. Candidate
+role: Ph.D. in Electrical and Computer Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
     url: 'https://mae.osu.edu'
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Ph.D. candidate in  Electrical and  Computer  Engineering at The Ohio State University.
+bio: I am a robotics engineer at Apptronik.
 
 interests:
   - Robotics
@@ -29,7 +29,7 @@ education:
   courses:
     - course: PhD in Electrical and Computer Engineering
       institution: The Ohio State University
-      year: 2019 - current
+      year: 2019 - 2024
     - course: MSc in Electrical and Computer Engineering
       institution: The Ohio State University
       year: 2019

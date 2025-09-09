@@ -10,7 +10,7 @@ last_name: Paredes
 superuser: true
 
 # Role/position
-role: Ph.D. Candidate
+role: Ph.D. in Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +18,7 @@ organizations:
     url: 'https://mae.osu.edu'
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a PhD candidate at The Ohio State University. My research endeavors are centered upon humanoids and exoskeleton devices.
+bio: I am a robotics engineer at UCR. My research endeavors are centered upon humanoids and exoskeleton devices.
 
 interests:
   - Control Systems
@@ -30,7 +30,7 @@ education:
   courses:
     - course: PhD in Mechanical Engineering
       institution: The Ohio State University
-      year: 2024 (expected)
+      year: 2025 
     - course: MSc in Mechanical Engineering
       institution: Texas A&M University
       year: 2014

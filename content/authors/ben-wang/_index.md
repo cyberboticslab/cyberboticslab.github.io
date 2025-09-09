@@ -10,7 +10,7 @@ last_name: Wang
 superuser: false
 
 # Role/position
-role: Undergraduate Research Assistant
+role: B.S. in Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:
