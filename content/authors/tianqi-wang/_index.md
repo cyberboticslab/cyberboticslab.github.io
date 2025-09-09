@@ -57,7 +57,6 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Graduate Students
+  - Alumni
 ---
-
 Tianqi Wang is currently working toward a Ph.D. in electrical and computer engineering at Ohio State University. He earned his B.S. and M.S. degrees from Miami University. After graduation, he worked on two tilt-rotor UAVs, LQR optimization in controllers, IMU algorithms, swarm controllers, and GUI for testing friction machines. His current research interests are in the control of periodic gait and motorized locomotives for legged robots, and particularly in algorithms and simulations to implement optimization and stabilization for nonlinear controllers.
