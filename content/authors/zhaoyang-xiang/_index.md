@@ -59,5 +59,4 @@ highlight_name: true
 user_groups:
   - Graduate Students
 ---
-
-Zhaoyang Xiang is a Ph.D. student at the Cyberbotics Lab. His research interests include bipedal robotic walking, model-based robotic locomotion planning and control.
+Zhaoyang Xiang is a Ph.D. Candidate at the Cyberbotics Lab. His research interests include bipedal robotic walking, model-based robotic locomotion planning and control.

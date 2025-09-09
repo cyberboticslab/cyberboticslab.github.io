@@ -10,7 +10,7 @@ last_name: Peng
 superuser: false
 
 # Role/position
-role: Ph.D. Student
+role: Ph.D. Candidate
 
 # Organizations/Affiliations
 organizations:
@@ -57,5 +57,4 @@ highlight_name: true
 user_groups:
   - Graduate Students
 ---
-
-Chengyang Peng is a Ph.D. student in  Mechanical and Aerospace Engineering at The Ohio State University.
+Chengyang Peng is a Ph.D. Candidate in  Mechanical and Aerospace Engineering at The Ohio State University.
