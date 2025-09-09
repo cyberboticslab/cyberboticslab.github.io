@@ -67,6 +67,6 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Graduate Students
+  - Alumni
 ---
 Victor Paredes received his Ph.D. in Mechanical Engineering at The Ohio State University in 2025, working with Dr. Ayonga Hereid. My research endeavors are centered upon advancing the realm of bipedal locomotion, with a specific focus on applications for humanoids and exoskeleton devices. I'm utilizing optimization, template-based planners, and non-linear control as the foundation of my research. Our work heavily relies on the implementation of algorithms, for which I use C++, Python, and MATLAB to manage sensor data and compute real-time control algorithms for our robotic systems. I earned a Master of Science in Mechanical Engineering from Texas A&M University. During this formative period, my academic research gravitated towards the realm of bipedal locomotion and the pioneering field of lower-limb prosthetic devices.
