@@ -1,0 +1,16 @@
+# Palette A, selected from the original-logo color studies.
+name = "Lab Brick"
+
+[light]
+  primary = "#A43B3B"
+  link = "#A43B3B"
+  link_hover = "#812D2D"
+
+  menu_primary = "#FAF8F5"
+  menu_text = "#302B29"
+  menu_text_active = "#A43B3B"
+  menu_title = "#302B29"
+
+  background = "#FAF8F5"
+  home_section_odd = "#FAF8F5"
+  home_section_even = "#F2EEEA"

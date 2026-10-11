@@ -18,7 +18,7 @@ organizations:
     url: 'https://ece.osu.edu'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Gradutate student at The Ohio State University.
+bio: Cyberbotics Lab alumnus who completed his M.S. in May 2025 and began Ph.D. studies in another lab at The Ohio State University.
 
 interests:
   - Control Systems
@@ -30,7 +30,7 @@ education:
   courses:
     - course: MS in Electrical and Computer Engineering
       institution: The Ohio State University, Columbus
-      year: 2025 (expected)
+      year: May 2025
     - course: BTech in Electronics and Telecommunication Engineering
       institution: Savitribai Phule Pune University (Pune, India)
       year: 2021
@@ -66,5 +66,6 @@ highlight_name: true
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Alumni
+lastmod: 2026-10-09
 ---
-Himanshu Lodha received his M.S. degree in the Electrical and Computer Engineering at the Ohio State University in 2025. His research interests lie at the intersection of controls, perception, and learning for legged systems, thereby developing more agile and athletic robot behaviours. Before joining OSU, he worked as a Research Engineer at the Stochastic Robotics Lab (Stoch Lab) at the Indian Institute of Science (IISc), Bengaluru, with Dr. Shishir NY Kolathaya, on the development of indigenous quadrupedal robots for over two and a half years.
+Himanshu Lodha received his M.S. degree in Electrical and Computer Engineering at The Ohio State University in May 2025. He subsequently began Ph.D. studies in another lab at Ohio State. His research interests lie at the intersection of controls, perception, and learning for legged systems, thereby developing more agile and athletic robot behaviours. Before joining OSU, he worked as a Research Engineer at the Stochastic Robotics Lab (Stoch Lab) at the Indian Institute of Science (IISc), Bengaluru, with Dr. Shishir NY Kolathaya, on the development of indigenous quadrupedal robots for over two and a half years.

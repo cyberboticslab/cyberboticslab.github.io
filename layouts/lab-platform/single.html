@@ -1,0 +1,42 @@
+{{- define "main" -}}
+{{ $platform := site.Data.lab.cyber_suite }}
+<article class="lab-platform-page">
+  <header class="lab-platform-header lab-container">
+    <div>
+      <p class="lab-kicker">Cyberbotics Lab · Research software</p>
+      <h1>{{ .Title }}</h1>
+      <p class="lab-platform-tagline">{{ $platform.tagline }}</p>
+      <p class="lab-lead">{{ $platform.description }}</p>
+      <p class="lab-platform-status">{{ $platform.status }}</p>
+      <div class="lab-actions"><a class="lab-button" href="#capabilities">Explore the platform <span aria-hidden="true">↓</span></a><a class="lab-button lab-button-secondary" href="#availability">Release status <span aria-hidden="true">↓</span></a></div>
+    </div>
+    {{ partial "lab/cyber-suite-map.html" . }}
+  </header>
+  <section id="capabilities" class="lab-section lab-tint" aria-labelledby="platform-capabilities-title">
+    <div class="lab-container">
+      <div class="lab-section-heading"><div><p class="lab-kicker">Inside Cyber Suite</p><h2 id="platform-capabilities-title">Models, methods, and experiments.</h2></div></div>
+      <div class="lab-platform-capabilities">
+        {{ range $platform.capabilities }}
+          <div><h3>{{ .title }}</h3><p>{{ .text }}</p></div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <div class="article-container lab-platform-content">
+    <div class="article-style">
+      {{ .Content }}
+      <h2 id="availability">Availability</h2>
+      <p>{{ $platform.availability }}</p>
+    </div>
+  </div>
+  <section class="lab-section lab-container" aria-labelledby="platform-research-title">
+    <div class="lab-section-heading"><div><p class="lab-kicker">Research informing the platform</p><h2 id="platform-research-title">Explore the methods.</h2></div></div>
+    <div class="lab-platform-related">
+      {{ range $platform.related }}
+        <article><h3><a href="{{ .page | relURL }}">{{ .title }}</a></h3><p>{{ .text }}</p><a class="lab-text-link" href="{{ .page | relURL }}">Research & papers <span aria-hidden="true">→</span></a></article>
+      {{ end }}
+    </div>
+    <p class="lab-section-note">For open-source trajectory optimization tools, explore <a href="{{ "project/frost/" | relURL }}">FROST</a> and our <a href="{{ "resources/" | relURL }}">research resources</a>.</p>
+  </section>
+</article>
+{{- end -}}

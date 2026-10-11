@@ -1,0 +1,35 @@
+{{ $block := .wcBlock }}
+{{ $videos := (where site.RegularPages "Section" "video").ByDate.Reverse }}
+{{ $topics := slice (dict "id" "locomotion" "label" "Locomotion") (dict "id" "navigation" "label" "Navigation") (dict "id" "control-safety" "label" "Control & Safety") (dict "id" "exoskeletons" "label" "Exoskeletons") }}
+{{ $labels := dict "locomotion" "Locomotion" "navigation" "Navigation" "control-safety" "Control & Safety" "exoskeletons" "Exoskeletons" }}
+<div class="lab-video-gallery" data-video-gallery>
+  <header class="lab-video-heading">
+    <p class="lab-kicker">Research in motion</p>
+    <h1>{{ $block.content.title }}</h1>
+    <div class="lab-lead">{{ $block.content.text | markdownify }}</div>
+  </header>
+  <div class="lab-video-filters" role="group" aria-label="Filter videos by research topic" data-video-filters hidden>
+    <button type="button" data-video-topic="all" aria-pressed="true" aria-controls="lab-video-grid">All videos</button>
+    {{ range $topics }}<button type="button" data-video-topic="{{ .id }}" aria-pressed="false" aria-controls="lab-video-grid">{{ .label }}</button>{{ end }}
+  </div>
+  <p class="lab-video-count" data-video-count role="status" aria-live="polite" aria-atomic="true">{{ len $videos }} videos · newest first</p>
+  <div id="lab-video-grid" class="lab-video-grid">
+    {{ range $videos }}
+      {{ $title := .Params.card_title | default .Title }}
+      <article class="lab-demo lab-video-card" data-video-topics="{{ delimit .Params.video_topics " " }}">
+        <a class="lab-demo-image" href="{{ .RelPermalink }}" aria-label="Watch {{ $title }}">
+          {{ partial "lab/image.html" (dict "resource" (partial "functions/get_featured_image.html" .) "alt" $title) }}
+          <span class="lab-play" aria-hidden="true">▶</span>
+        </a>
+        <div class="lab-demo-body">
+          <p class="lab-video-meta"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006" }}</time>{{ with .Params.video_topics }}<span aria-hidden="true">·</span><span>{{ index $labels (index . 0) }}</span>{{ end }}</p>
+          <h2><a href="{{ .RelPermalink }}">{{ $title }}</a></h2>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+          <a class="lab-text-link" href="{{ .RelPermalink }}">Watch & explore <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>
+{{ $script := resources.Get "js/lab-videos.js" | minify | fingerprint "sha256" }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>

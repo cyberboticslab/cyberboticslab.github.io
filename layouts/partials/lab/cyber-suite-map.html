@@ -1,0 +1,9 @@
+<figure class="lab-platform-map" aria-label="Cyber Suite connects modeling, planning, control, learning, and analysis">
+  <div class="lab-platform-map-core"><span>Shared software foundation</span><strong>C++ core <span aria-hidden="true">+</span> Python interfaces</strong></div>
+  <ul>
+    {{ range site.Data.lab.cyber_suite.tools }}
+      <li><strong>{{ .title }}</strong><span>{{ .text }}</span></li>
+    {{ end }}
+  </ul>
+  <figcaption>Reusable tools for developing, connecting, and studying robot behavior.</figcaption>
+</figure>

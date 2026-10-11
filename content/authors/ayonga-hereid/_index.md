@@ -10,7 +10,7 @@ last_name: Hereid
 superuser: true
 
 # Role/position
-role: Assistant Professor of Mechanical Engineering
+role: Associate Professor of Mechanical and Aerospace Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -75,11 +75,11 @@ user_groups:
   - Principal Investigator
 ---
 
-I am currently an Assistant Professor in the Department of [Mechanical and Aerospace Engineering](https://mae.osu.edu/) at the [Ohio State University](https://osu.edu/) and the Principal Investigator of the [Cyberbotics Lab](#). I received my Ph.D. degree in Mechanical Engineering from the [Georgia Institute of Technology](https://gatech.edu) in 2016 under the supervision of [Prof. Aaron Ames](http://ames.caltech.edu/). Before joining the Ohio State in 2019, I was a postdoctoral research fellow at the [University of Michigan](https://umich.edu/) with [Prof. Jessy Grizzle](https://ece.umich.edu/faculty/grizzle/) to develop safety-critical controllers for powered lower-limb exoskeletons that help individuals with paraplegia to walk again without the use of crutches.
+I am currently an Associate Professor in the Department of [Mechanical and Aerospace Engineering](https://mae.osu.edu/) at the [Ohio State University](https://osu.edu/) and the Principal Investigator of the [Cyberbotics Lab](/). I received my Ph.D. degree in Mechanical Engineering from the [Georgia Institute of Technology](https://gatech.edu) in 2016 under the supervision of [Prof. Aaron Ames](http://ames.caltech.edu/). Before joining the Ohio State in 2019, I was a postdoctoral research fellow at the [University of Michigan](https://umich.edu/) with [Prof. Jessy Grizzle](https://ece.umich.edu/faculty/grizzle/) to develop safety-critical controllers for powered lower-limb exoskeletons that help individuals with paraplegia to walk again without the use of crutches.
 
 
 
 
 
 
-My research aims to develop computational and theoretical tools to mitigate the high dimensionality and nonlinearity present in robot control and motion planning problems, and strives to pursue these objectives in the challenging domain of **humanoid robots and lower-limb exoskeletons**. The *transformative nature of my research* stems from its ability to generate theoretical and computational tools for a variety of robotic, cyber-physical, and autonomous systems that exhibit complex dynamical behaviors.
+My research develops computational and theoretical methods for robot control and motion planning, with a focus on **humanoid robots and lower-limb exoskeletons**. Our group connects nonlinear control, numerical optimization, and robot learning with simulation and experiments. [Explore the lab's research](/projects/) and [publications](/publication/).

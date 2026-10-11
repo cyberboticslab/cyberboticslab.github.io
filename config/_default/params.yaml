@@ -6,7 +6,7 @@
 # Appearance
  
 appearance:
-  theme_day: minimal
+  theme_day: lab_brick
   theme_night: 
   font: native
   font_size: L
@@ -18,7 +18,7 @@ marketing:
     site_type: ResearchOrganization
     local_business_type: 'ProfessionalService'
     org_name: 'Cyberbotics Lab'
-    description: 'A university research group focuses on cyber physical and robotics systems research.'
+    description: 'Cyberbotics Lab at The Ohio State University studies control, planning, and learning for humanoid robots and exoskeletons.'
     twitter: 'CyberboticsL'
   analytics:
     google_analytics: 'G-6CVM5KTY4Q'
@@ -37,13 +37,14 @@ header:
     align: r
     show_logo: true
     show_language: false
-    show_day_night: true
+    show_day_night: false
     show_search: true
     highlight_active_link: true
 
 # Site footer
 
 footer:
+  block: lab
   copyright:
     notice: '© {year} Cyberbotics Lab. This work is licensed under {license}'
     license:
@@ -68,7 +69,7 @@ features:
       - python
       - latex
   math:
-    enable: true
+    enable: false # Opt in with `math: true` on pages that contain equations.
   privacy_pack:
     enable: false
   repository:
@@ -98,7 +99,7 @@ features:
       index_name: ''
       show_logo: false
   map:
-    provider: 'mapnik'
+    provider: '' # No interactive map blocks; avoid loading Leaflet site-wide.
     api_key: ''
     zoom: 15
 
@@ -106,6 +107,7 @@ features:
 
 extensions:
   cms:
+    enable: false
     branch: main
     local_backend: false
   academicons:

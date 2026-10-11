@@ -1,0 +1,12 @@
+{{/* Keep the original PNG's artwork, sizing contract, and transparency. */}}
+{{ $logo := resources.Get "media/logo.png" }}
+{{ if eq .constraint "max_height" }}
+  {{ $logo = $logo.Resize (printf "x%s" (string .size)) }}
+{{ else }}
+  {{ $logo = $logo.Fit (printf "%sx%s" (string .size) (string .size)) }}
+{{ end }}
+{{/* Palette A maps the original blue, purple, gray, and white in sRGB. */}}
+{{ $matrix := "0.1978305340 0.0405677605 0.7371873751 0 0.0048064873 -0.3078831247 1.2283347311 -0.1283848921 0 0.1804823054 -0.0451841460 0.8998307064 -0.0199233476 0 0.1260611009 0 0 0 1 0" }}
+{{ $image := $logo.Content | base64Encode }}
+{{ $svg := printf `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="%d" height="%d" viewBox="0 0 %d %d"><defs><filter id="brick" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="%s"/></filter></defs><image width="%d" height="%d" filter="url(#brick)" xlink:href="data:image/png;base64,%s"/></svg>` $logo.Width $logo.Height $logo.Width $logo.Height $matrix $logo.Width $logo.Height $image }}
+{{ return (resources.FromString (printf "media/logo-brick-%s-%s.svg" .constraint (string .size)) $svg) }}

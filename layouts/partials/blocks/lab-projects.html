@@ -1,0 +1,21 @@
+<div class="lab-projects">
+  <h2>{{ .wcBlock.content.title }}</h2>
+  <div class="lab-project-grid">
+    {{ range (where site.RegularPages "Section" "project").ByDate.Reverse }}
+      <article class="lab-demo">
+        {{ $title := .Params.display_title | default .Title }}
+        {{ $imagePage := . }}
+        {{ with .Params.hero_image_page }}{{ $imagePage = site.GetPage . }}{{ end }}
+        <a class="lab-demo-image" href="{{ .RelPermalink }}" aria-label="{{ $title }}">
+          {{ partial "lab/image.html" (dict "resource" (partial "functions/get_featured_image.html" $imagePage) "alt" (.Params.hero_alt | default $title) "sizes" "(max-width: 767px) 100vw, 50vw") }}
+        </a>
+        <div class="lab-demo-body">
+          {{ if eq .File.ContentBaseName "hybrid-exo-humanoids" }}<p class="lab-badge">Research direction</p>{{ end }}
+          <h3><a href="{{ .RelPermalink }}">{{ $title }}</a></h3>
+          <p>{{ .Params.summary }}</p>
+          <a class="lab-text-link" href="{{ .RelPermalink }}">Methods & evidence <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>

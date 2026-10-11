@@ -1,0 +1,18 @@
+{{ with .Params.social }}
+<ul class="lab-person-links" aria-label="{{ $.Title }}'s links">
+  {{ range . }}
+    {{ $pack := .icon_pack | default "fas" }}
+    {{ $prefix := $pack }}
+    {{ if in (slice "fab" "fas" "far" "fal") $pack }}{{ $prefix = "fa" }}{{ end }}
+    {{ $icon := .icon }}
+    {{ $url := urls.Parse .link }}
+    {{ $labels := dict "envelope" "Email" "google-scholar" "Google Scholar" "github" "GitHub" "gitlab" "GitLab" "linkedin" "LinkedIn" "twitter" "Twitter" }}
+    {{ $label := .label | default (index $labels $icon) | default ($icon | humanize) }}
+    {{ if eq $url.Hostname "gitlab.com" }}
+      {{ if not .label }}{{ $label = "GitLab" }}{{ end }}
+      {{ if eq $icon "github" }}{{ $icon = "gitlab" }}{{ end }}
+    {{ end }}
+    <li><a href="{{ .link | relLangURL | safeURL }}" aria-label="{{ $label }} for {{ $.Title }}"{{ if in (slice "http" "https") $url.Scheme }} target="_blank" rel="noopener"{{ end }}><i class="{{ $pack }} {{ $prefix }}-{{ $icon }}" aria-hidden="true"></i><span>{{ $label }}</span></a></li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -18,7 +18,7 @@ organizations:
     url: 'https://mae.osu.edu'
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Graduate Student at The Ohio State University. My first semester of research begins in August, 2023.
+bio: Cyberbotics Lab alumnus who received his M.S. in Mechanical Engineering at The Ohio State University in May 2025.
 
 interests:
   - Control Systems
@@ -30,7 +30,7 @@ education:
   courses:
     - course: MSc in Mechanical Engineering
       institution: The Ohio State University
-      year: 2025 (expected)
+      year: May 2025
     - course: BSc in Mechanical Engineering
       institution: The Ohio State University
       year: 2022
@@ -66,5 +66,6 @@ highlight_name: true
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Alumni
+lastmod: 2026-10-09
 ---
-Sean received his M.S. degree in Mechanical Engineering at The Ohio State University in 2025. Sean earned a Bachelors of Science in Mechanical Engineering from The Ohio State University in 2023.
+Sean received his M.S. degree in Mechanical Engineering at The Ohio State University in May 2025. Sean earned a Bachelors of Science in Mechanical Engineering from The Ohio State University in 2023.

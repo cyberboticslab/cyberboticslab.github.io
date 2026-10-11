@@ -3,6 +3,8 @@
 
 
 title: "Dynamic Exoskeleton Locomotion"
+card_title: "Dynamic exoskeleton walking"
+video_topics: ["exoskeletons"]
 subtitle: 
 summary: 
 authors: []
@@ -24,6 +26,7 @@ image:
 profile: false
 share: false
 pager: true
+lastmod: "2026-10-10"
 ---
 
 

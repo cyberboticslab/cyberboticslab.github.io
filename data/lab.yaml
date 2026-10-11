@@ -1,0 +1,90 @@
+# Homepage selections; preserve established project and publication URLs.
+hero:
+  title: Advancing the science of robotic motion.
+  text: We study how humanoid robots and exoskeletons balance, move, and adapt. Our research combines dynamics, control, optimization, and learning, connecting mathematical models with simulation and robot experiments.
+  image: media/albums/test/digit3.jpg
+  alt: Digit on a walking mat in the Cyberbotics Lab, with researchers and stepping platforms nearby.
+cyber_suite:
+  title: Cyber Suite
+  tagline: A modular foundation for robotics research.
+  description: Our robotics software platform connects robot models, motion planning, whole-body control, and learning through a C++ core and Python interfaces.
+  status: Active development
+  availability: The repository is not public yet. Public release details will be announced here.
+  page: /cyber-suite/
+  tools:
+    - title: Model
+      text: Kinematics & dynamics
+    - title: Plan
+      text: Steps & motion references
+    - title: Control
+      text: Tasks & constraints
+    - title: Learn
+      text: Policies & simulation
+    - title: Analyze
+      text: Logs & visualization
+  capabilities:
+    - title: Robot modeling & simulation
+      text: Robot descriptions, kinematics, and dynamics connect with MuJoCo simulation and configurable terrain scenes.
+    - title: Planning & whole-body control
+      text: Locomotion planners and task-based controllers share robot models and motion references, with explicit contact, friction, and actuator constraints.
+    - title: Learning & policy execution
+      text: Python training workflows and ONNX policy interfaces support experiments that connect learned behavior with the C++ control stack.
+    - title: Runtime & experiment analysis
+      text: The CORTA runtime composes control and planning at different rates. Structured logging, Python analysis, and Rerun visualization help inspect the resulting behavior.
+  related:
+    - title: Whole-body control
+      page: /project/whole-body-control/
+      text: Tasks, robot dynamics, and constrained control.
+    - title: Legged locomotion & learning
+      page: /project/hierarchical-reinforcement-learning/
+      text: Connecting structured models and learned behavior.
+    - title: Perceptive locomotion
+      page: /project/perceptive-locomotion/
+      text: Connecting terrain, planning, and robot motion.
+demonstrations:
+  - title: Walking across disconnected footholds
+    year: 2026
+    setting: Hardware demonstration
+    description: Depth-based foothold perception and variable step timing guide Digit across separated platforms.
+    image_page: video/perceptive-variable-timing-footstep-planning
+    video: /video/perceptive-variable-timing-footstep-planning/
+    paper: /publication/xiang-2026-perceptive/
+    research: /project/perceptive-locomotion/
+  - title: Navigating with learned subgoals
+    year: 2026
+    setting: Hardware demonstration
+    description: A learned planner selects intermediate goals for Digit navigation around obstacles.
+    image_page: video/dynamic-subgoal-navigation
+    video: /video/dynamic-subgoal-navigation/
+    paper: /publication/peng-2025-reinforcement/
+    research: /project/perceptive-locomotion/
+  - title: Learning safer walking
+    year: 2026
+    setting: Simulation
+    description: Reduced-order predictions guide policy learning and foot-placement filtering in Digit simulation.
+    image_page: video/model-informed-safe-reinforcement-learning
+    video: /video/model-informed-safe-reinforcement-learning/
+    paper: /publication/paredes-2026-model-informed/
+    research: /project/hierarchical-reinforcement-learning/
+areas:
+  - title: Humanoid locomotion & navigation
+    label: Perception → planning → walking
+    text: Connect terrain perception and obstacle avoidance with feasible steps, step timing, and whole-body motion.
+    project: /project/perceptive-locomotion/
+  - title: Safe control & robot learning
+    label: Models + learning
+    text: Combine reduced-order models, feedback control, and learned policies; evaluate stability and safety under stated conditions.
+    project: /project/hierarchical-reinforcement-learning/
+  - title: Exoskeletons & assistive robotics
+    label: Human–robot dynamics
+    text: Develop dynamic walking controllers for powered lower-limb exoskeletons and study balance in coupled human–robot systems.
+    project: /project/exoskeleton/
+  - title: Robotics software & simulation
+    label: Methods → reusable tools
+    text: Connect robot models, planning, control, and learning through Cyber Suite's modular C++ and Python foundation.
+    project: /cyber-suite/
+selected_publications:
+  - publication/paredes-2026-model-informed
+  - publication/xiang-2026-perceptive
+  - publication/castillo-2025-terrain-aware
+  - publication/xiang-2024-adaptive

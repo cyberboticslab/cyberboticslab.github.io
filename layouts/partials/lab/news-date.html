@@ -1,0 +1,11 @@
+{{/* Partial dates use the first day only for sorting; display their known precision. */}}
+{{ $display := .Date | time.Format site.Params.locale.date_format }}
+{{ $datetime := .Date.Format "2006-01-02" }}
+{{ if eq .Params.date_precision "month" }}
+  {{ $display = .Date.Format "January 2006" }}
+  {{ $datetime = .Date.Format "2006-01" }}
+{{ else if eq .Params.date_precision "year" }}
+  {{ $display = .Date.Format "2006" }}
+  {{ $datetime = .Date.Format "2006" }}
+{{ end }}
+{{ return (dict "display" $display "datetime" $datetime) }}

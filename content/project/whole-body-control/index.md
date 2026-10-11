@@ -1,6 +1,18 @@
 ---
 title: Safe Task Space Controller for Underactuated Robotic Systems
-summary: Our focus lies in developing safe and reliable control strategies for underactuated robotic systems, with a particular emphasis on humanoid robots.
+display_title: Whole-Body Control
+overview: A humanoid must balance while coordinating many competing motion tasks. We formulate controllers that account for dynamics, contacts, actuator limits, and model-based safety constraints.
+hero_image_page: video/safe-whole-body-task-space-control
+hero_video: /video/safe-whole-body-task-space-control/
+hero_alt: Lab demonstration of whole-body task-space control for a humanoid robot.
+hero_caption: Whole-body task-space control · Digit simulation and hardware experiments.
+method_steps:
+  - Define balance and motion tasks
+  - Enforce dynamics and contact constraints
+  - Compute whole-body control inputs
+method_figure: true
+method_figure_label: Explore the controller illustration
+summary: Task-space control with dynamic, contact, and safety constraints for humanoid robots.
 tags:
   - learning
   - control
@@ -12,32 +24,27 @@ image:
   focal_point: Smart
   preview_only: false
 
-reading_time: true
+reading_time: false
 profile: false
 pager: true
+lastmod: 2026-10-10
 ---
 
+## The problem
 
-### Introduction
-Underactuated robotic systems, such as humanoid robots, have fewer control inputs than degrees of freedom. This makes their control challenging, especially when performing complex tasks in dynamic and uncertain environments. Our research aims to develop a Safe Task Space Controller that enables humanoid robots to perform tasks while ensuring safety and stability.
+A humanoid controller must coordinate balance and motion while respecting actuator limits, unilateral contacts, friction, and closed kinematic chains. Competing tasks can drive the robot toward undesirable configurations.
 
-### Research Focus
+## Our approach
 
-1. **Task Space Hierarchy**: We develop task space formulations that allow the robot to specify and achieve desired tasks in a safe and efficient manner. By defining tasks in the operational space, such as end-effector position or orientation, we can control the robot's behavior while considering its underactuated dynamics and unilateral constraints.
+We formulate inverse-dynamics quadratic programs with task-space objectives and control barrier functions. Related foot-placement work accounts for periodically swaying ground using a time-varying reduced-order model.
 
-2. **Stability and Safety**: Ensuring stability and safety is crucial for underactuated robotic systems, especially during dynamic tasks or in the presence of disturbances. Our research focuses on developing control strategies that guarantee stability and prevent undesirable behaviors, such as falling or collisions. We investigate techniques such as control barrier function and Lyapunov-based control to achieve stable and safe operation.
+## Results and experimental setting
 
-3. **Adaptability and Robustness**: Underactuated robotic systems often operate in dynamic and uncertain environments. Our research aims to develop adaptive and robust control strategies that allow the robot to adapt to changes in the environment or system dynamics. We investigate techniques such as adaptive control, robust control, and learning-based approaches to enhance the adaptability and robustness of the task space controller.
+Safe whole-body task-space control was evaluated on Digit in simulation and hardware experiments. Swaying-ground foot-placement control was also tested in both settings. The mathematical results apply under the models and sufficient conditions stated in each paper; the experiments cover the reported tasks and disturbances.
 
+## Papers and demonstrations
 
-### Applications
-The research in Safe Task Space Controller for underactuated robotic systems has numerous potential applications across various domains. Some of the areas where our work can have a significant impact include:
+- [Safe whole-body task-space control (ACC 2024)](/publication/paredes-2024-safe/)
+- [Walking on swaying rigid surfaces](/publication/gao-2024-time/)
 
-1. **Humanoid Robotics**: Safe and efficient control of humanoid robots is essential for their deployment in real-world scenarios. Our research can contribute to applications such as assistive robotics, human-robot collaboration, and entertainment.
-
-2. **Rehabilitation and Prosthetics**: Underactuated control strategies can also be applied to assistive devices, such as exoskeletons or prosthetic limbs. By ensuring safe and reliable control of these devices, individuals with mobility impairments can benefit from improved assistance and mobility.
-
-3. **Dynamic Environments**: The Safe Task Space Controller can be applied to underactuated robotic systems operating in dynamic environments, such as search and rescue missions or industrial automation. By ensuring stability and safety, these systems can navigate complex and unpredictable environments effectively.
-
-### Summary
-By addressing the challenges posed by underactuation, we strive to enhance the capabilities of these robots and enable their deployment in various real-world applications. Stay tuned for updates on our ongoing research and exciting breakthroughs in this field.
+[Watch the whole-body control experiments](/video/safe-whole-body-task-space-control/) and [the swaying-ground experiments](https://www.youtube.com/watch?v=NtAT0DFtMCY).

@@ -1,6 +1,18 @@
 ---
 title: Hierarchical Reinforcement Learning (HRL) for Safe Dynamic Legged Locomotion
-summary: Our research project aims to advance the capabilities of legged robots via novel Hierarchical Reinforcement Learning (HRL) algorithms, enabling them to achieve efficient and adaptive locomotion in complex environments. 
+display_title: Safe Learning for Legged Robots
+overview: Walking policies must handle changing contacts, terrain, and disturbances. We combine structured control and reduced-order models with learning, then evaluate the resulting behavior in simulation and robot experiments.
+hero_image_page: video/model-informed-safe-reinforcement-learning
+hero_video: /video/model-informed-safe-reinforcement-learning/
+hero_alt: Digit simulation used to demonstrate model-informed safe reinforcement learning.
+hero_caption: Model-informed safe learning in Digit simulation · October 2026 lab video.
+method_steps:
+  - Structure policies with walking models
+  - Learn control behavior in simulation
+  - Evaluate performance and safety conditions
+method_figure: true
+method_figure_label: Explore the original project-goals diagram
+summary: Model-informed learning methods for dynamic bipedal locomotion.
 tags:
   - learning
   - humanoid
@@ -10,38 +22,36 @@ featured: true
 
 image:
   caption: Illustration of proposed project goals.
+  alt_text: Original project-goals diagram connecting inverse reinforcement learning, navigation, stepping, gait policies, and proposed robot transfer.
   focal_point: Smart
   preview_only: false
 
-reading_time: true
+reading_time: false
 profile: false
 pager: true
+lastmod: 2026-10-10
 ---
 
+## The problem
 
-### Introduction
-In this project, we focus on developing a hierarchical reinforcement learning framework for robust and safe legged locomotion. In the field of cognitive science, it has been observed that humans and animals learn complex behaviors in a hierarchical manner to adapt to the complexities of real-world environments. This project aims to apply this concept to legged robots, enabling robots to efficiently explore high-dimensional behavior spaces and overcome challenges faced by traditional end-to-end reinforcement learning algorithms.
+Learning a locomotion policy must address changing contact dynamics, disturbances, and the gap between training and robot experiments. Safety properties also depend on the model and conditions under which they are derived.
 
-### Research Focus
+## Our approach
 
-1. **Skill Acquisition**: We are developing algorithms that enable legged robots to acquire a repertoire of skills through reinforcement learning. By decomposing locomotion tasks into sub-tasks, such as walking at different speeds, turning, and stair climbing, we can train the robot to learn each skill individually. This hierarchical approach allows for faster learning and better generalization to new environments.
+We combine structured control policies and reduced-order walking models with reinforcement learning. Work includes cascade motion policies, compact terrain representations, and model-informed step-to-step prediction for safe learning.
 
-2. **Skill Coordination**: Once the robot has learned a set of skills, the challenge lies in coordinating these skills to achieve robust and safe locomotion. Our research focuses on developing hierarchical policies that can effectively combine and sequence the learned skills, allowing the robot to adapt to different terrains, navigate obstacles, and maintain stability during locomotion.
+## Results and experimental setting
 
-3. **Robustness and Safety**: Ensuring robust and safe locomotion is of utmost importance, especially in real-world scenarios. We are investigating techniques to enhance the robustness of the learned policies, making them more resilient to disturbances, uncertainties, and changes in the environment. Additionally, we are developing safety-aware algorithms that enable legged robots to avoid collisions, recover from falls, and operate within predefined safety constraints.
+- **Learned walking on hardware:** The cascade-policy work includes Digit walking experiments, with a linked lab demonstration.
+- **Terrain-aware representations:** The TCST 2026 journal paper evaluates locomotion in high-fidelity simulation and reports preliminary hardware sensor comparisons.
+- **Model-informed safe learning:** The 2026 study evaluates full-order Digit in MuJoCo, using step-to-step predictions to inform policy learning and runtime foot-placement filtering.
 
+> **Safety conditions:** The safe-learning certificate applies to the reduced-order model under the paper's assumptions. Each study identifies its own training, simulation, and hardware evaluation conditions.
 
-### Applications
-The research in hierarchical reinforcement learning for robust and safe legged locomotion has numerous potential applications across various domains. Some of the areas where our research can have a significant impact include:
+## Papers and demonstrations
 
-1. **Robotics in Hazardous Environments**: Legged robots equipped with robust and safe locomotion capabilities can be deployed in hazardous environments, such as disaster-stricken areas or nuclear facilities, to perform tasks that are too dangerous for humans.
+- [Cascade motion policy design (IEEE Access, 2022)](/publication/castillo-2022-reinforcement/)
+- [Terrain-aware locomotion representations (TCST 2026)](/publication/castillo-2025-terrain-aware/)
+- [Model-informed safe reinforcement learning (2026)](/publication/paredes-2026-model-informed/)
 
-2. **Exploration and Surveillance**: By enabling legged robots to navigate challenging terrains and adapt to unforeseen obstacles, they can be used for exploration and surveillance missions in outdoor or unknown environments, such as search and rescue operations, environmental monitoring, or mapping of inaccessible areas.
-
-3. **Rehabilitation and Prosthetics**: The research in robust and safe legged locomotion can also have implications in the field of rehabilitation and prosthetics. By developing advanced algorithms and frameworks, we can enhance the locomotion capabilities of assistive devices, such as exoskeletons or prosthetic limbs, allowing individuals with mobility impairments to regain independence and mobility.
-
-{{< youtube ocAZtHr07Fw >}}
-
-### Summary
-
-In summary, our research project focuses on developing a hierarchical reinforcement learning framework for robust and safe legged locomotion. By leveraging the concept of hierarchical reinforcement learning, we aim to decompose the legged locomotion task into simpler sub-tasks and enable the robot to learn and adapt its locomotion skills in a layered fashion. This approach addresses the challenges faced by traditional end-to-end reinforcement learning algorithms, such as sampling inefficiency, lengthy training, and the sim-to-real gap. The transformative nature of the proposed work stems from its ability to make theoretical and practical advances in enabling safe and dynamic mobility on legged robots and lower-body exoskeletons in the real-world environment. The results will facilitate inroads into a broad application domains of bipedal robots, and ultimately, improves the quality of life of millions via restored locomotion with powered lower-limb exoskeletons.
+[Watch model-informed safe learning](/video/model-informed-safe-reinforcement-learning/) and the earlier [learned Digit walking experiments](/video/digit-learning-to-walk-robustly/).

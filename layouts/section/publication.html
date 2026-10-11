@@ -1,0 +1,60 @@
+{{- define "main" -}}
+{{ $publications := .Pages.ByDate.Reverse }}
+{{ $years := slice }}
+{{ $types := slice }}
+{{ range $publications }}
+  {{ $years = $years | append (string (.Params.publication_year | default (.Date.Format "2006"))) }}
+  {{ range .Params.publication_types }}{{ $types = $types | append (string .) }}{{ end }}
+{{ end }}
+{{ $pub_types := partial "functions/get_pub_types" . }}
+<div class="lab-container lab-publications" data-publication-browser>
+  <header class="lab-page-heading">
+    <p class="lab-kicker">Research archive</p>
+    <h1>{{ .Title }}</h1>
+    <p class="lab-lead">Explore our work in robot dynamics, control, planning, and learning.</p>
+    {{ with .Content }}<div class="article-style">{{ . }}</div>{{ end }}
+  </header>
+  <div class="lab-publication-controls" data-publication-controls role="search" aria-label="Search and filter publications" hidden>
+    <div class="lab-publication-search">
+      <label for="lab-paper-search">Search papers</label>
+      <input id="lab-paper-search" type="search" placeholder="Title, author, or venue" autocomplete="off" spellcheck="false" data-publication-search aria-controls="lab-publication-results">
+    </div>
+    <div>
+      <label for="lab-paper-year">Year</label>
+      <select id="lab-paper-year" data-publication-year aria-controls="lab-publication-results">
+        <option value="all">All years</option>
+        {{ range sort (uniq $years) "" "desc" }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+      </select>
+    </div>
+    <div>
+      <label for="lab-paper-type">Publication type</label>
+      <select id="lab-paper-type" data-publication-type aria-controls="lab-publication-results">
+        <option value="all">All types</option>
+        {{ range sort (uniq $types) }}<option value="{{ . }}">{{ index $pub_types (int .) }}</option>{{ end }}
+      </select>
+    </div>
+    <button type="button" data-publication-reset>Reset filters</button>
+  </div>
+  <p class="lab-result-count" data-publication-count role="status" aria-live="polite" aria-atomic="true">{{ len $publications }} papers · newest first</p>
+  <div id="lab-publication-results">
+    <p class="lab-empty-state" data-publication-empty hidden>No papers match these filters. Try another keyword or reset the filters.</p>
+    {{ range $year := sort (uniq $years) "" "desc" }}
+    <section class="lab-publication-year" data-publication-group aria-labelledby="papers-{{ $year }}">
+      <h2 id="papers-{{ $year }}">{{ $year }}</h2>
+      <div class="lab-publication-list">
+        {{ range $index, $item := $publications }}
+        {{ if eq $year (string (.Params.publication_year | default (.Date.Format "2006"))) }}
+        {{ $authors := partial "page_metadata_authors" . | plainify }}
+        <div data-publication data-year="{{ $year }}" data-types="{{ delimit .Params.publication_types " " }}" data-search="{{ .Title }} {{ $authors }} {{ .Params.publication | plainify }} {{ .Params.summary | plainify }}">
+          {{ partial "functions/render_view" (dict "page" $ "item" . "view" ($.Params.view | default "custom") "index" $index) }}
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </div>
+</div>
+{{ $script := resources.Get "js/lab-publications.js" | minify | fingerprint "sha256" }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{- end -}}

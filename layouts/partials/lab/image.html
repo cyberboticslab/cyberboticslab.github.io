@@ -1,0 +1,12 @@
+{{/* Responsive derivatives of actual research images. */}}
+{{ with .resource }}
+  {{ $small := .Fill "480x270 webp Center" }}
+  {{ $large := .Fill "960x540 webp Center" }}
+  <img src="{{ $large.RelPermalink }}"
+       srcset="{{ $small.RelPermalink }} 480w, {{ $large.RelPermalink }} 960w"
+       sizes="{{ $.sizes | default "(max-width: 767px) 100vw, 33vw" }}"
+       width="960" height="540" alt="{{ $.alt }}"
+       {{ if $.eager }}loading="eager" fetchpriority="high"{{ else }}loading="lazy"{{ end }} decoding="async">
+{{ else }}
+  {{ errorf "Missing research image: %s" .alt }}
+{{ end }}

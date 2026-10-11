@@ -1,13 +1,16 @@
 ---
+lastmod: "2026-10-10"
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Digit Learning to Walk Robustly"
+card_title: "Learning robust walking"
+video_topics: ["locomotion"]
 subtitle: 
-summary: 
+summary: "Reinforcement learning and cascade policies for robust bipedal locomotion."
 authors: []
 tags: []
 categories: []
-date: 2022-05-21T12:10:33-04:00
+date: "2022-05-22T03:59:28+00:00"
 # lastmod: 2023-05-30T12:10:33-04:00
 featured: false
 draft: false
@@ -28,3 +31,7 @@ pager: true
 
 
 {{< youtube ocAZtHr07Fw >}}
+
+[Watch on YouTube](https://www.youtube.com/watch?v=ocAZtHr07Fw).
+
+[Read the related publication](/publication/castillo-2022-reinforcement/).

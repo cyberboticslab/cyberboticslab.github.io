@@ -1,0 +1,24 @@
+{{- define "main" -}}
+{{ $pub_types := partial "functions/get_pub_types" . }}
+{{ $types := .Params.publication_types | default (slice "0") }}
+<article class="article pub lab-article-page">
+  {{ partial "lab/article-header.html" . }}
+  <div class="article-container lab-article-content">
+    <dl class="lab-publication-details">
+      {{ with .Params.publication }}<div><dt>Publication</dt><dd>{{ . | markdownify }}</dd></div>{{ end }}
+      {{ $type_labels := slice }}
+      {{ range $types }}{{ if and (gt (int .) 0) (lt (int .) (len $pub_types)) }}{{ $type_labels = $type_labels | append (index $pub_types (int .)) }}{{ end }}{{ end }}
+      {{ with $type_labels }}<div><dt>Type</dt><dd>{{ delimit . ", " }}</dd></div>{{ end }}
+      {{ with .Params.doi }}<div><dt>DOI</dt><dd><a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">{{ . }}</a></dd></div>{{ end }}
+    </dl>
+    {{ with .Params.abstract }}
+    <section class="lab-abstract article-style" aria-labelledby="abstract-title">
+      <h2 id="abstract-title">Abstract</h2>
+      <div>{{ . | markdownify }}</div>
+    </section>
+    {{ end }}
+    <div class="article-style">{{ .Content }}</div>
+    {{ partial "page_footer.html" . }}
+  </div>
+</article>
+{{- end -}}

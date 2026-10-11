@@ -10,7 +10,7 @@ last_name: Agrawal
 superuser: false
 
 # Role/position
-role: Undergraduate Research Assistant
+role: Undergraduate Alumnus
 
 # Organizations/Affiliations
 organizations:
@@ -27,7 +27,6 @@ education:
   courses:
     - course: BSc in Electrical and Computer Engineering
       institution: The Ohio State University
-      year: 2022 - 2026 (expected)
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -55,7 +54,8 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Undergraduate Students
+  - Alumni
+lastmod: 2026-10-09
 ---
 
-Sunny Agrawal is an undergraduate ECE student at OSU working on machine learning based research projects. Sunny is expected to finish his undergrad in May 2026. 
+Sunny Agrawal is an alumnus of the Cyberbotics Lab. As an undergraduate ECE student at The Ohio State University, he worked on machine-learning research projects.

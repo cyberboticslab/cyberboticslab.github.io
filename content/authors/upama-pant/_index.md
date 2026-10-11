@@ -10,7 +10,7 @@ last_name: Pant
 superuser: true
 
 # Role/position
-role: Graduate Student
+role: M.S. in Mechanical Engineering
 
 # Organizations/Affiliations
 organizations:
@@ -18,18 +18,18 @@ organizations:
     url: 'https://mae.osu.edu'
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a MSc student in Mechanical Engineering at The Ohio State University.
+bio: Cyberbotics Lab alumna who completed her M.S. in Mechanical Engineering in July 2026 and joined Tesla.
 
 interests:
   - Robotics
-  - Dyanamic & Control Systems 
+  - Dynamics & Control Systems
   - Rehabilitation
 
 education:
   courses:
     - course: MSc in Mechanical Engineering
       institution: The Ohio State University
-      year: 2024 - current
+      year: July 2026
     - course: BE in Mechanical Engineering
       institution: Kathmandu University, Nepal
       year: 2023
@@ -41,7 +41,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'pant.46@buckeyemail.osu.edu'
+    link: 'mailto:pant.46@buckeyemail.osu.edu'
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.com/citations?user=uHeayqcAAAAJ&hl=en&oi=sra
@@ -60,7 +60,8 @@ highlight_name: true
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Graduate Students
+  - Alumni
+lastmod: 2026-10-09
 ---
 
-Upama Pant is an MSc student in Mechanical Engineering at The Ohio State University. Her research focuses on mechatronic system design, control and planning for dynamic/ legged robotic systems, and assistive technologies. She has prior experience in human-centered robotics, including prosthetic design, wearable gait-sensing devices, as well as in industrial maintenance across high-speed beverage manufacturing lines and the automotive sector.
+Upama Pant received her M.S. in Mechanical Engineering at The Ohio State University in July 2026 and joined Tesla. Her research in the Cyberbotics Lab focused on mechatronic system design, control and planning for dynamic legged robotic systems, and assistive technologies. She has prior experience in human-centered robotics, including prosthetic design, wearable gait-sensing devices, as well as in industrial maintenance across high-speed beverage manufacturing lines and the automotive sector.

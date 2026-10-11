@@ -1,23 +1,21 @@
 ---
+doi: "10.1109/TRO.2025.3612326"
+url_pdf: "https://www.thetracelab.com/uploads/1/1/3/0/113094493/gao2025tro_v2.pdf"
+publication_short: "IEEE Transactions on Robotics · 2025"
+publication_year: 2025
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Time-Varying Foot-Placement Control for Underactuated Humanoid Walking on Swaying Rigid Surfaces
-subtitle: ''
-summary: ''
-authors:
-- Yuan Gao
-- Victor Paredes 
-- Yukai Gong
-- Zijian He
-- Ayonga Hereid
-- Yan Gu
+title: "Time-varying foot placement control for humanoid walking on swaying rigid surface"
+subtitle: "Published in IEEE Transactions on Robotics, 2025"
+summary: "Digit hardware and simulation experiments on periodically swaying ground."
+authors: ["Yuan Gao", "Victor Paredes", "Yukai Gong", "Zijian He", "Ayonga Hereid", "Yan Gu"]
 tags: 
 - dynamic rigid surface
 - template model
 - foot placement
 categories: []
-date: '2024-08-31'
-lastmod: 2024-09-01T13:49:29-04:00
+date: "2024-09-12"
+lastmod: "2026-10-10"
 featured: false
 draft: false
 
@@ -42,10 +40,11 @@ links:
 #   Otherwise, set `projects = []`.
 projects: ["whole-body-control"]
 publishDate: '2024-08-31T17:49:29.175380Z'
-publication_types:
-- '3'
-abstract: Locomotion on dynamic rigid surface (i.e., rigid surface accelerating in an inertial frame) presents complex challenges for controller design, which are essential for deploying humanoid robots in dynamic real-world environments such as moving trains, ships, and airplanes. This paper introduces a real-time, provably stabilizing control approach for underactuated humanoid walking on periodically swaying rigid surface. The first key contribution is the analytical extension of the classical angular momentum-based linear inverted pendulum model from static to swaying grounds. This extension results in a time-varying, nonhomogeneous robot model, which is fundamentally different from the existing pendulum models. We synthesize a discrete footstep control law for the model and derive a new set of sufficient stability conditions that verify the controller's stabilizing effect. Another key contribution is the development of a hierarchical control framework that incorporates the proposed footstep control law as its higher-layer planner to ensure the stability of underactuated walking. The closed-loop stability of the complete hybrid, full-order robot dynamics under this control framework is provably analyzed based on nonlinear control theory. Finally, experiments conducted on a Digit humanoid robot, both in simulations and with hardware, demonstrate the framework's effectiveness in addressing underactuated bipedal locomotion on swaying ground, even in the presence of uncertain surface motions and unknown external pushes. 
-publication: '*Submitted to IEEE Transactions on Robotics*'
+publication_types: ["2"]
+abstract: "This study extends an angular-momentum-based pendulum model to periodically swaying ground and derives a time-varying foot-placement controller with sufficient stability conditions. A hierarchical framework connects the planner to robot control. Digit simulation and hardware experiments evaluate walking under surface motion, uncertain motion estimates, and external pushes. The guarantees apply under the models and conditions stated in the paper."
+publication: "IEEE Transactions on Robotics, vol. 41, pp. 5740–5760, 2025"
 ---
+
+The page date records the first arXiv deposit. The journal publication year is 2025; the publisher record does not specify a month or day.
 
 {{< youtube NtAT0DFtMCY >}}

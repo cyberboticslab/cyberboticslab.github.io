@@ -1,0 +1,23 @@
+{{ $person := .person }}
+{{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+<article class="lab-person-card">
+  <a class="lab-person-portrait" href="{{ $person.RelPermalink }}" aria-label="View {{ $person.Title }}'s profile">
+    {{ if $avatar }}
+      {{ $image := $avatar.Fill "360x360 webp Center" }}
+      <img src="{{ $image.RelPermalink }}" width="360" height="360" alt="{{ $person.Title }}" loading="lazy" decoding="async">
+    {{ else }}
+      {{ $initials := "" }}
+      {{ range first 2 (split $person.Title " ") }}{{ $initials = print $initials (substr . 0 1) }}{{ end }}
+      <span class="lab-person-initials" aria-hidden="true">{{ $initials }}</span>
+    {{ end }}
+  </a>
+  <div class="lab-person-info">
+    <h3><a href="{{ $person.RelPermalink }}">{{ $person.Title }}</a></h3>
+    {{ if .design.show_role }}{{ with $person.Params.role }}<p class="lab-person-role">{{ . | markdownify }}</p>{{ end }}{{ end }}
+    {{ if and .is_pi $person.Params.bio }}<p class="lab-person-bio">{{ $person.Params.bio | markdownify }}</p>{{ end }}
+    {{ if and .design.show_interests (not .is_alumni) }}
+      {{ with $person.Params.interests }}<p class="lab-person-interests"><span>Research interests</span>{{ delimit . "; " }}</p>{{ end }}
+    {{ end }}
+    {{ if .design.show_social }}{{ partial "lab/person-links.html" $person }}{{ end }}
+  </div>
+</article>

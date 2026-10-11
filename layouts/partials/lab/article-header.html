@@ -1,0 +1,24 @@
+<header class="lab-article-header">
+  <div class="article-container">
+    {{ if eq .Type "publication" }}
+      <a class="lab-back-link" href="{{ "/publication/" | relURL }}"><span aria-hidden="true">←</span> All publications</a>
+      <p class="lab-kicker">{{ .Params.publication_short | default "Research publication" | plainify }}</p>
+    {{ else }}
+      <a class="lab-back-link" href="{{ "/post/" | relURL }}"><span aria-hidden="true">←</span> All news</a>
+      <p class="lab-kicker">Lab news</p>
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.subtitle }}<p class="lab-lead">{{ . | markdownify }}</p>{{ end }}
+    {{ partial "page_metadata.html" (dict "page" . "is_list" 0) }}
+    <div class="lab-article-actions">{{ partial "page_links.html" (dict "page" . "is_list" 0) }}</div>
+    {{ if not .Params.image.preview_only }}
+      {{ with partial "functions/get_featured_image.html" . }}
+        {{ $image := .Fit "1440x1000 webp" }}
+        <figure class="lab-article-figure">
+          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $.Params.image.alt_text | default $.Title }}" decoding="async">
+          {{ with $.Params.image.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+        </figure>
+      {{ end }}
+    {{ end }}
+  </div>
+</header>

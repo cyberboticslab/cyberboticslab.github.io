@@ -1,0 +1,33 @@
+{{ $block := .wcBlock }}
+{{ $groups := slice }}
+{{ range $block.content.user_groups }}
+  {{ $members := where (where site.Pages "Section" "authors") "Params.user_groups" "intersect" (slice .) }}
+  {{ if $members }}{{ $groups = $groups | append (dict "name" . "members" (sort $members "Params.last_name" "asc")) }}{{ end }}
+{{ end }}
+<div class="lab-team">
+  <header class="lab-page-heading">
+    <p class="lab-kicker">Cyberbotics Lab · Ohio State</p>
+    <h1>{{ $block.content.title }}</h1>
+    <p class="lab-lead">{{ $block.content.text }}</p>
+  </header>
+  <nav class="lab-group-nav" aria-label="People groups">
+    {{ range $groups }}<a href="#{{ .name | anchorize }}">{{ .name }} <span>{{ len .members }}</span></a>{{ end }}
+  </nav>
+  {{ range $groups }}
+  {{ $is_pi := eq .name "Principal Investigator" }}
+  {{ $is_alumni := eq .name "Alumni" }}
+  <section class="lab-people-group{{ if $is_pi }} lab-people-pi{{ end }}{{ if $is_alumni }} lab-people-alumni{{ end }}" id="{{ .name | anchorize }}" aria-labelledby="{{ .name | anchorize }}-title">
+    <h2 id="{{ .name | anchorize }}-title">{{ .name }}</h2>
+    <div class="lab-people-grid">
+      {{ range .members }}
+        {{ partial "lab/person-card.html" (dict "person" . "is_pi" $is_pi "is_alumni" $is_alumni "design" $block.design) }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+  <aside class="lab-people-inquiry">
+    <h2>Interested in our research?</h2>
+    <p>Explore student pathways and research collaboration inquiries.</p>
+    <a class="lab-text-link" href="{{ "/contact/" | relURL }}">Join & collaborate <span aria-hidden="true">→</span></a>
+  </aside>
+</div>

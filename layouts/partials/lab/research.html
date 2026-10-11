@@ -1,0 +1,10 @@
+<div class="lab-area-grid">
+  {{ range site.Data.lab.areas }}
+    <article class="lab-area">
+      <p class="lab-kicker">{{ .label }}</p>
+      <h3><a href="{{ .project | relURL }}">{{ .title }}</a></h3>
+      <p>{{ .text }}</p>
+      <a class="lab-text-link" href="{{ .project | relURL }}">Explore this research <span aria-hidden="true">→</span></a>
+    </article>
+  {{ end }}
+</div>

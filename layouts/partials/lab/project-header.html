@@ -1,0 +1,31 @@
+{{ $page := . }}
+{{ $title := .Params.display_title | default .Title }}
+{{ $imagePage := . }}
+{{ with .Params.hero_image_page }}{{ $imagePage = site.GetPage . }}{{ end }}
+{{ $image := partial "functions/get_featured_image.html" $imagePage }}
+<header class="lab-project-header lab-container">
+  <p class="lab-kicker">{{ if .Params.research_direction }}Research direction{{ else }}Research project{{ end }}</p>
+  <div class="lab-project-intro{{ if not $image }} lab-project-intro-text{{ end }}">
+    <div>
+      <h1>{{ $title }}</h1>
+      <p class="lab-lead">{{ .Params.overview | default .Params.summary }}</p>
+      <div class="lab-actions">
+        {{ with .Params.hero_video }}<a class="lab-button" href="{{ . | relURL }}">Watch demonstration <span aria-hidden="true">→</span></a>{{ end }}
+        <a class="lab-button lab-button-secondary" href="#{{ .Params.resource_anchor | default "papers-and-demonstrations" }}">{{ if eq .File.ContentBaseName "frost" }}Code & resources{{ else }}Papers & resources{{ end }} <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    {{ with $image }}
+      <figure class="lab-project-visual">
+        {{ with $page.Params.hero_video }}<a href="{{ . | relURL }}" aria-label="Watch {{ $title }}">{{ end }}
+        {{ partial "lab/image.html" (dict "resource" . "alt" ($page.Params.hero_alt | default $title) "eager" true "sizes" "(max-width: 767px) 100vw, 45vw") }}
+        {{ if $page.Params.hero_video }}<span class="lab-play" aria-hidden="true">▶</span></a>{{ end }}
+        {{ with $page.Params.hero_caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+    {{ end }}
+  </div>
+  {{ with .Params.method_steps }}
+    <ol class="lab-method-steps" aria-label="Method overview">
+      {{ range $index, $step := . }}<li><span class="lab-step-number" aria-hidden="true">{{ add $index 1 }}</span><span>{{ $step }}</span></li>{{ end }}
+    </ol>
+  {{ end }}
+</header>

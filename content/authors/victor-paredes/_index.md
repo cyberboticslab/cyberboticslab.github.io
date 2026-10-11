@@ -30,7 +30,7 @@ education:
   courses:
     - course: PhD in Mechanical Engineering
       institution: The Ohio State University
-      year: 2025 
+      year: August 2025
     - course: MSc in Mechanical Engineering
       institution: Texas A&M University
       year: 2014
@@ -68,5 +68,6 @@ highlight_name: true
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Alumni
+lastmod: 2026-10-09
 ---
-Victor Paredes received his Ph.D. in Mechanical Engineering at The Ohio State University in 2025, working with Dr. Ayonga Hereid. My research endeavors are centered upon advancing the realm of bipedal locomotion, with a specific focus on applications for humanoids and exoskeleton devices. I'm utilizing optimization, template-based planners, and non-linear control as the foundation of my research. Our work heavily relies on the implementation of algorithms, for which I use C++, Python, and MATLAB to manage sensor data and compute real-time control algorithms for our robotic systems. I earned a Master of Science in Mechanical Engineering from Texas A&M University. During this formative period, my academic research gravitated towards the realm of bipedal locomotion and the pioneering field of lower-limb prosthetic devices.
+Victor Paredes received his Ph.D. in Mechanical Engineering at The Ohio State University in August 2025, working with Dr. Ayonga Hereid. He is the Cyberbotics Lab's second Ph.D. graduate. My research endeavors are centered upon advancing the realm of bipedal locomotion, with a specific focus on applications for humanoids and exoskeleton devices. I'm utilizing optimization, template-based planners, and non-linear control as the foundation of my research. Our work heavily relies on the implementation of algorithms, for which I use C++, Python, and MATLAB to manage sensor data and compute real-time control algorithms for our robotic systems. I earned a Master of Science in Mechanical Engineering from Texas A&M University. During this formative period, my academic research gravitated towards the realm of bipedal locomotion and the pioneering field of lower-limb prosthetic devices.

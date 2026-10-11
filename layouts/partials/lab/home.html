@@ -1,0 +1,72 @@
+<div class="lab-home">
+  <section class="lab-hero lab-container" aria-labelledby="lab-title">
+    <div>
+      <p class="lab-kicker">Cyberbotics Lab · The Ohio State University</p>
+      <h1 id="lab-title">{{ site.Data.lab.hero.title }}</h1>
+      <p class="lab-lead">{{ site.Data.lab.hero.text }}</p>
+      <div class="lab-actions">
+        <a class="lab-button" href="{{ "projects/" | relURL }}">Explore research <span aria-hidden="true">→</span></a>
+        <a class="lab-button lab-button-secondary" href="#demonstrations">Watch demonstrations</a>
+      </div>
+      <p class="lab-affiliation">Mechanical and Aerospace Engineering<br>Columbus, Ohio</p>
+    </div>
+    <figure class="lab-hero-image">
+      {{ partial "lab/image.html" (dict "resource" (resources.Get site.Data.lab.hero.image) "alt" site.Data.lab.hero.alt "eager" true "sizes" "(max-width: 767px) 100vw, 50vw") }}
+      <figcaption>Digit experiments in the Cyberbotics Lab.</figcaption>
+    </figure>
+  </section>
+  {{ partial "lab/cyber-suite-feature.html" . }}
+  <section id="demonstrations" class="lab-section lab-tint" aria-labelledby="demo-title">
+    <div class="lab-container">
+      <div class="lab-section-heading"><div><p class="lab-kicker">Research in motion</p><h2 id="demo-title">From methods to demonstrations</h2></div><a class="lab-text-link" href="{{ "videos/" | relURL }}">All videos <span aria-hidden="true">→</span></a></div>
+      <div class="lab-demo-grid">
+        {{ range site.Data.lab.demonstrations }}
+          {{ $page := site.GetPage .image_page }}
+          <article class="lab-demo">
+            <a class="lab-demo-image" href="{{ .video | relURL }}" aria-label="Watch {{ .title }}">
+              {{ partial "lab/image.html" (dict "resource" (partial "functions/get_featured_image.html" $page) "alt" .title) }}
+              <span class="lab-play" aria-hidden="true">▶</span>
+            </a>
+            <div class="lab-demo-body">
+              <p class="lab-badge">{{ .year }} video · {{ .setting }}</p>
+              <h3><a href="{{ .video | relURL }}">{{ .title }}</a></h3>
+              <p>{{ .description }}</p>
+              <div class="lab-card-links"><a href="{{ .video | relURL }}">Watch video</a><a href="{{ .paper | relURL }}">Read paper</a><a href="{{ .research | relURL }}">Research</a></div>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+      <p class="lab-section-note">Also explore <a href="{{ "video/dynamic-exoskeleton-walking-for-restored-mobility/" | relURL }}">exoskeleton walking</a>, <a href="{{ "video/safe-whole-body-task-space-control/" | relURL }}">whole-body control</a>, and <a href="{{ "video/safety-testing-of-legged-robots/" | relURL }}">disturbance-rejection testing</a>.</p>
+    </div>
+  </section>
+  <section class="lab-section lab-container" aria-labelledby="research-title">
+    <div class="lab-section-heading"><div><p class="lab-kicker">What we study</p><h2 id="research-title">Research areas</h2></div><a class="lab-text-link" href="{{ "projects/" | relURL }}">All projects <span aria-hidden="true">→</span></a></div>
+    {{ partial "lab/research.html" . }}
+    <p class="lab-section-note">Safety evaluation connects these areas: <a href="{{ "project/safety-testing/" | relURL }}">see our work on testing legged robots</a>.</p>
+  </section>
+  <section class="lab-section lab-tint" aria-labelledby="papers-title">
+    <div class="lab-container">
+      <div class="lab-section-heading"><div><p class="lab-kicker">Recent work</p><h2 id="papers-title">Selected publications</h2></div><a class="lab-text-link" href="{{ "publication/" | relURL }}">All publications <span aria-hidden="true">→</span></a></div>
+      <div class="lab-paper-list">
+        {{ range site.Data.lab.selected_publications }}
+          {{ with site.GetPage . }}{{ partial "views/custom.html" (dict "item" .) }}{{ else }}{{ errorf "Missing selected publication: %s" . }}{{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <section class="lab-section lab-tint" aria-labelledby="news-title">
+    <div class="lab-container">
+      <div class="lab-section-heading"><div><p class="lab-kicker">Lab updates</p><h2 id="news-title">Recent news</h2></div><a class="lab-text-link" href="{{ "post/" | relURL }}">All news <span aria-hidden="true">→</span></a></div>
+      <div class="lab-news-list">
+        {{ range first 3 (where site.RegularPages "Section" "post").ByDate.Reverse }}
+          {{ $date := partial "lab/news-date.html" . }}
+          <article><time datetime="{{ $date.datetime }}">{{ $date.display }}</time><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><a class="lab-text-link" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read update <span aria-hidden="true">→</span></a></article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  <section class="lab-section lab-container lab-people" aria-labelledby="people-title">
+    <figure>{{ partial "lab/image.html" (dict "resource" (resources.Get "media/albums/test/digit2.jpg") "alt" "Researchers with Digit in the Cyberbotics Lab." "sizes" "(max-width: 767px) 100vw, 45vw") }}</figure>
+    <div><p class="lab-kicker">People behind the research</p><h2 id="people-title">Meet the lab</h2><p>Led by <a href="{{ "author/ayonga-hereid/" | relURL }}">Ayonga Hereid</a>, Associate Professor of Mechanical and Aerospace Engineering at Ohio State, our group studies the dynamics, control, and learning of walking robots.</p><div class="lab-actions"><a class="lab-button" href="{{ "people/" | relURL }}">Meet our people <span aria-hidden="true">→</span></a><a class="lab-button lab-button-secondary" href="{{ "contact/" | relURL }}">Join & collaborate</a></div></div>
+  </section>
+</div>

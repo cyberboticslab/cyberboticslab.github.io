@@ -2,6 +2,8 @@
 # Documentation: https://wowchemy.com/docs/managing-content/
 
 title: "Durus walks like a human"
+card_title: "Human-like walking with DURUS"
+video_topics: ["locomotion"]
 subtitle: 
 summary: 
 authors: []
@@ -23,6 +25,7 @@ image:
 profile: false
 share: false
 pager: true
+lastmod: "2026-10-10"
 ---
 
 

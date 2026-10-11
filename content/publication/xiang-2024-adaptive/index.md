@@ -1,21 +1,21 @@
 ---
+doi: "10.1109/IROS60139.2025.11246171"
+url_pdf: "https://arxiv.org/pdf/2403.17136"
+publication_short: "IROS 2025"
+publication_year: 2025
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: 'Adaptive Step Duration for Precise Foot Placement: Achieving Robust Bipedal Locomotion on Terrains with Restricted Footholds'
+title: "Adaptive Step Duration for Accurate Foot Placement: Achieving Robust Bipedal Locomotion on Terrains with Restricted Footholds"
 subtitle: ''
-summary: ''
-authors:
-- Zhaoyang Xiang
-- Victor Paredes
-- Guillermo A Castillo
-- Ayonga Hereid
+summary: "Simulation study of adaptive step timing and foot placement on constrained stepping-stone terrain."
+authors: ["Zhaoyang Xiang", "Victor Paredes", "Guillermo A Castillo", "Ayonga Hereid"]
 tags: 
 - adaptive planning
 - stepping stone
 - model predictive control
 categories: []
-date: '2024-09-01'
-lastmod: 2023-09-01T13:49:29-04:00
+date: "2025-10-19"
+lastmod: "2026-10-10"
 featured: false
 draft: false
 
@@ -23,7 +23,7 @@ links:
 - name: arXiv
   url: https://arxiv.org/abs/2403.17136
 
-url_video: ' https://youtu.be/DjH69m1kbnM '
+url_video: "https://youtu.be/DjH69m1kbnM"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -40,11 +40,10 @@ image:
 #   Otherwise, set `projects = []`.
 projects: ["perceptive-locomotion"]
 publishDate: '2024-08-01T17:49:29.313793Z'
-publication_types:
-- '3'
+publication_types: ["1"]
 abstract: 
     Traditional one-step preview planning algorithms for bipedal locomotion struggle to generate viable gaits when walking across terrains with restricted footholds, such as stepping stones. To overcome such limitations, this paper introduces a novel multi-step preview foot placement planning algorithm based on the step-to-step discrete evolution of the Divergent Component of Motion (DCM) of walking robots. Our proposed approach adaptively changes the step duration and the swing foot trajectory for optimal foot placement under constraints, thereby enhancing the long-term stability of the robot and significantly improving its ability to navigate environments with tight constraints on viable footholds. We demonstrate its effectiveness through various simulation scenarios with complex stepping-stone configurations and external perturbations. These tests underscore its improved performance for navigating foothold-restricted terrains, even with external disturbances.  
-publication: '*Submitted to 2025 IEEE International Conference on Robotics and Automation (ICRA)*'
+publication: "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 6607–6613"
 ---
 
 {{< youtube DjH69m1kbnM>}}

@@ -33,7 +33,7 @@ Congratulations to Prof. {{% mention "ayonga-hereid" %}} for being selected as o
 
 
 
-![](innovation-superstars.png)
+![Ohio State College of Engineering innovation recognition.](featured.png)
 
 
 The complete list of 2023 and 2022 cohorts can be found [here](https://engineering.osu.edu/innovation-superstars-collectible-cards). Order a free set today!
