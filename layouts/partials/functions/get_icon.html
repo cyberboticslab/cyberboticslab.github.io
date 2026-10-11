@@ -1,0 +1,4 @@
+{{/* Share the Palette A artwork across browser, touch, app, and fallback icons. */}}
+{{ $icon := resources.Get "media/icon-brick.png" }}
+{{ $icon_resized := $icon.Fill (printf "%sx%s Center" (string .) (string .)) }}
+{{ return $icon_resized }}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="461" height="461" viewBox="0 0 461 461">
+  <!-- Palette A applied to the original icon without changing its artwork or alpha.
+       sRGB anchors: #0723D9 -> #A43B3B, #290F33 -> #302B29,
+       #00FF00 -> #D9D1CA, #FFFFFF -> #FAF8F5.
+       Export: rsvg-convert assets/media/icon-brick.svg -o assets/media/icon-brick.png -->
+  <defs>
+    <filter id="palette-a" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="
+          -0.3977642177 0.7482401757 0.5271759824 0.0000000000 0.1027402164
+          0.1188625824 0.7192140591 0.0340785941 0.0000000000 0.1003937841
+          0.1201269221 0.7016613782 0.0485005288 0.0000000000 0.0904954845
+          0 0 0 1 0"/>
+    </filter>
+  </defs>
+  <image width="461" height="461" filter="url(#palette-a)" xlink:href="icon.png"/>
+</svg>
