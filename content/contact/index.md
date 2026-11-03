@@ -32,6 +32,6 @@ Scott Laboratory, W198\
 201 W. 19th Avenue\
 Columbus, OH 43210, United States
 
-**Lab email:** [cyberbotics.lab@gmail.com](mailto:cyberbotics.lab@gmail.com)
+**Lab email:** [hereid.1@osu.edu](mailto:hereid.1@osu.edu)
 
-[Email the lab](mailto:cyberbotics.lab@gmail.com) to arrange a visit.
+[Email the lab](mailto:hereid.1@osu.edu) to arrange a visit.
