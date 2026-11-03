@@ -2,7 +2,7 @@
 title: Join & collaborate
 summary: Research inquiries, student pathways, and contact information for the Cyberbotics Lab.
 date: 2022-10-24
-lastmod: 2026-10-09
+lastmod: 2026-11-02
 profile: false
 share: false
 ---
@@ -32,4 +32,6 @@ Scott Laboratory, W198\
 201 W. 19th Avenue\
 Columbus, OH 43210, United States
 
-[Email the lab](mailto:hereid.1@osu.edu) to arrange a visit.
+**Lab email:** [cyberbotics.lab@gmail.com](mailto:cyberbotics.lab@gmail.com)
+
+[Email the lab](mailto:cyberbotics.lab@gmail.com) to arrange a visit.
